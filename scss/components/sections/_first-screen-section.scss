@@ -1,0 +1,51 @@
+.first-screen-section{
+	height: 65.7813vw;
+	background-size: cover;
+	padding-top: 24.7396vw;
+
+	.page-caption{
+		margin-left: 26.0417vw;
+		width: 72.9167vw;
+		font-size: 3.1250vw;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		line-height: 2;
+		font-weight: 500;
+		color: #fff;
+		font-style: italic;
+		position: relative;
+		margin-bottom: 17.7083vw;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 92.2917vw;
+			height: 36.5104vw;
+			background: url(../img/decorations/first-screen-lines.png) no-repeat center center / contain;
+			position: absolute;
+			left: -18vw;
+			padding-top: -0.7813vw;
+		}
+
+		.first-line{
+			padding-left: 2.0833vw;
+		}
+
+		strong{
+			font-weight: inherit;
+			font-size: 5.7292vw;
+			letter-spacing: 0;
+			line-height: 1;
+		}
+	}
+
+	.section-text{
+		width: 59.3750vw;
+		font-size: 1.8750vw;
+		line-height: 1.2;
+		color: #fff;
+		font-weight: 300;
+		font-style: italic;
+		margin-left: 24.2188vw;
+	}
+}

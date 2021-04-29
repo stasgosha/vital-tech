@@ -1,0 +1,55 @@
+.site-map-section{
+	background: #484747;
+	color: #fff;
+
+	--header-number-color: #404141;
+	--header-border-color: #34aaab;
+
+	.section-header-content{
+		flex: auto;
+	}
+}
+
+.sitemap-block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+
+	.block-nav{
+		display: flex;
+		font-size: 1.2500vw;
+		line-height: 1.25;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		li{
+			margin-right: 1.8229vw;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			a{
+				color: inherit;
+			}
+		}
+	}
+}
+
+.socials-list{
+	display: grid;
+	grid-gap: 0.9375vw;
+
+	li{
+		a{
+			color: currentColor
+		}
+
+		.link-icon{
+			width: 0.9375vw;
+			height: 0.9375vw;
+			fill: currentcolor;
+		}
+	}
+}

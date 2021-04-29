@@ -1,0 +1,63 @@
+.challenge-section{
+	background: url(../img/backgrounds/challenge-bg.jpg) no-repeat center center / cover;
+
+	.section-content{
+		padding: 4.6875vw 18.7500vw 5.2083vw;
+	}
+
+	.section-top-text{
+		ul{
+			@include default-ul;
+		}
+	}
+
+	.section-bottom{
+		display: flex;
+		padding: 0 3.1250vw 12.5000vw;
+
+		.column{
+			padding-top: 14.5833vw;
+			flex: none;
+
+			&.left{
+				width: 22.3958vw;
+				padding-right: 3.6458vw;
+			}
+
+			&.right{
+				width: 25.5208vw;
+				padding-left: 1vw;
+
+				ul{
+					margin-left: 7.6042vw;
+				}
+			}
+		}
+
+		.bottom-image{
+			flex: auto;
+
+			img{
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.column-caption{
+			margin-bottom: 8.3333vw;
+			font-size: 1.2500vw;
+			line-height: 1.5;
+			color: #2897ac;
+			font-weight: 800;
+			font-style: italic;
+			text-transform: uppercase;
+			letter-spacing: 0.5em;
+		}
+
+		ul{
+			@include default-ul;
+			font-style: normal;
+		}
+	}
+}

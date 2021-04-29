@@ -1,0 +1,22 @@
+// Fonts
+$main-font: 'Exo 2', Arial, sans-serif;
+$second-font: 'Exo 2', $main-font;
+
+// Colors
+$azure: #00d0e0;
+
+$gray: #000;
+$dark: #000;
+$light: #e3e8e9;
+
+$text-color: $gray;
+$text-dark: $dark;
+$text-light: $light;
+
+$primary: $azure;
+$accent: $azure;
+
+// Params
+$body-bg: #fff; // site background
+$t: .3s; // animation duration
+$r: 0; // default border radius

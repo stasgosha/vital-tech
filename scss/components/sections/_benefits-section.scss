@@ -1,0 +1,49 @@
+.benefits-section{
+	.section-content{
+		background: url(../img/backgrounds/benefits-bg.jpg) no-repeat center center / cover;
+		height: 54.8438vw;
+		display: flex;
+		align-items: center;
+		padding: 5.2083vw 7.5521vw;
+
+		@media screen and (min-width: 992px){
+			background-attachment: fixed;
+		}
+	}
+}
+
+.benefits-grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1.5625vw;
+}
+
+.benefit-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	.card-image{
+		width: 10.0000vw;
+		height: 10.0000vw;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.card-caption{
+		margin-bottom: 2.6042vw;
+		font-weight: 400;
+		font-size: 2.5000vw;
+		line-height: 1.2;
+	}
+
+	p{
+		font-size: 1.2500vw;
+		line-height: 1.25;
+	}
+}

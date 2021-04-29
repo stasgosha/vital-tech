@@ -1,0 +1,91 @@
+@mixin p{
+	font-size: 1.1458vw;
+	line-height: 1.36;
+
+	@media screen and (max-width: 1199px){
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 767px){
+		font-size: 18px;
+	}
+}
+
+body{
+	font-family: $main-font;
+	color: $text-color;
+
+	@include p;
+}
+
+@mixin h1{
+	
+}
+
+@mixin h2{
+	font-size: 4.4271vw;
+	line-height: 1.1;
+	font-weight: 300;
+	font-style: italic;
+}
+
+@mixin h3{
+	font-size: 2.5000vw;
+	line-height: 1;
+	font-weight: 500;
+	font-style: italic;
+}
+
+// @mixin h4{
+// 	font-size: 1.0417vw;
+// 	line-height: 1.4;
+// 	font-weight: bold;
+// }
+
+@mixin default-ul{
+	font-size: 1.5625vw;
+	line-height: 1.5;
+	font-weight: 500;
+	font-style: italic;
+
+	li{
+		margin-bottom: 0.5em;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&:before{
+			font-weight: 800;
+			content: '. ';
+			font-style: normal;
+			transform: translateY(-0.3em);
+			display: inline-block;
+		}
+	}
+}
+
+.tpg{
+	p{
+		margin-bottom: 1.36em;
+		@include p;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	h1{
+		@include h1;
+		margin-bottom: 1em;
+	}
+
+	h2{
+		@include h2;
+		margin-bottom: 1em;
+
+		&:not(:first-child){
+			margin-top: 3em;
+		}
+	}
+}

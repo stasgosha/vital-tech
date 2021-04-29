@@ -1,0 +1,31 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/assist";
+@import "components/layout";
+@import "components/typography";
+@import "icons";
+
+// Header
+@import "components/header/header";
+
+// Footer 
+@import "components/footer/footer";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/sliders";
+@import "components/common/modals";
+@import "components/common/menu-opener";
+
+// Sections
+@import "components/sections/first-screen-section";
+@import "components/sections/default-section-header";
+@import "components/sections/challenge-section";
+@import "components/sections/solution-section";
+@import "components/sections/benefits-section";
+@import "components/sections/use-cases-section";
+@import "components/sections/partnership-section";
+@import "components/sections/resources-section";
+@import "components/sections/site-map-section";
+@import "components/sections/thank-you-section";

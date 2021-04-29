@@ -1,0 +1,37 @@
+.thank-you-section{
+	height: 100vh;
+	min-height: 44.6097vw;
+	background: #fff;
+	background: url(../img/backgrounds/thank-you-bg.png) no-repeat left top / cover;
+	padding: 13.3829vw 3.7175vw 7.4349vw 27.8810vw;
+
+	h1{
+		font-size: 4.4610vw;
+		line-height: 1.3;
+		letter-spacing: 0.1em;
+		font-weight: 500;
+		font-style: italic;
+		margin-bottom: 1.2vw;
+	}
+
+	.section-text{
+		padding: 6.6914vw 5.2045vw 1vw 5.2045vw;
+		width: 49.8141vw;
+		border-left: 0.5204vw solid #000;
+		font-size: 1.4870vw;
+		line-height: 1.2em;
+		font-weight: 300;
+
+		p{
+			margin-bottom: 1.8587vw;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			&.big{
+				font-size: 2.2305vw;
+			}
+		}
+	}
+}

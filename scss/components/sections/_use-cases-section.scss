@@ -1,0 +1,92 @@
+.use-cases-section{
+	background: #f5f7f7;
+
+	--header-number-color: #dae1e2;
+
+	.section-main{
+		padding: 2.3438vw 3.1250vw 7.8125vw;
+	}
+
+	.section-top{
+		width: 77vw;
+		margin-bottom: 9.3750vw;
+		font-size: 1.8750vw;
+		font-style: italic;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	.section-inner{
+		display: flex;
+	}
+
+	.section-left{
+		flex: auto;
+		margin-right: 2.6042vw;
+	}
+
+	.section-right{
+		width: 26.0417vw;
+		border-left: 1px solid #939293;
+		padding: 0 2.6042vw;
+		flex: none;
+
+		ul{
+			@include default-ul;
+			font-size: 1.2500vw;
+			line-height: 1.25;
+			font-style: normal;
+			font-weight: 400;
+
+			li{
+				margin-bottom: 1.25em;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.small-caption{
+		position: relative;
+		padding-bottom: 0.5208vw;
+		font-size: 1.2500vw;
+		line-height: 1.25;
+		font-weight: 700;
+		margin-bottom: 1.0417vw;
+
+		&:before{
+			content: '';
+			display: block;
+			width: calc(100% + 2.6042vw * 2);
+			position: absolute;
+			left: -2.6042vw;
+			bottom: 0;
+			height: 0.2083vw;
+			background: $primary;
+		}
+	}
+}
+
+.cases-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.8750vw;
+}
+
+.case-card{
+	font-size: 1.2500vw;
+	line-height: 1.25;
+	font-weight: 300;
+
+	.card-image{
+		margin-bottom: 1.8229vw;
+
+		img{
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+}

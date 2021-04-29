@@ -1,0 +1,33 @@
+.btn{
+	text-align: center;
+	padding: 0 0.8333vw;
+	min-height: 2.5000vw;
+	border-radius: 0.3125vw;
+	font-size: 1.3021vw;
+	line-height: 1.1;
+	font-weight: 400;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: all $t;
+	cursor: pointer;
+	appearance: none;
+	white-space: nowrap;
+	border: 0;
+	color: #fff;
+	background: #AD324E;
+
+	&:hover,
+	&:focus{
+		background: $primary;
+		outline: none;
+	}
+
+	@media screen and (max-width: 1199px){
+		height: 38px;
+		border-radius: 5px;
+		font-size: 14px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

@@ -1,0 +1,50 @@
+.form{
+	.input-field,
+	textarea,
+	.select-field select{
+		border: 1px solid #fff;
+		appearance: none;
+		background: #fff;
+		border-radius: 0.3125vw;
+		flex: auto;
+		height: 2.5000vw;
+		text-transform: none;
+		font-size: 1.3021vw;
+		font-weight: 400;
+		color: $text-color;
+		font-family: inherit;
+		padding: 0 0.8333vw;
+		outline: none !important;
+		transition: all $t;
+		width: 100%;
+		box-shadow: none;
+
+		&::placeholder{
+			opacity: 1;
+			color: rgba(#434949, .31);
+		}
+
+		&:focus{
+			border-color: $primary;
+		}
+
+		@media screen and (max-width: 1199px){
+			height: 38px;
+			border-radius: 5px;
+			font-size: 14px;
+			padding: 0 15px;
+		}
+	}
+
+	textarea{
+		resize: none;
+		padding: 0.8333vw;
+		height: 5.4688vw;
+		display: block;
+
+		@media screen and (max-width: 1199px){
+			padding: 15px;
+			height: 90px;
+		}
+	}
+}
