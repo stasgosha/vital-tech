@@ -19,7 +19,9 @@ body{
 }
 
 @mixin h1{
-	
+	font-size: 4.4271vw;
+	line-height: 1.2;
+	padding-bottom: 3.1250vw;
 }
 
 @mixin h2{
@@ -87,5 +89,21 @@ body{
 		&:not(:first-child){
 			margin-top: 3em;
 		}
+	}
+}
+
+.page-caption{
+	@include h1;
+	position: relative;
+
+	&:after{
+		content: '';
+		display: block;
+		width: 89.4792vw;
+		height: 3.1771vw;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: url(../img/decorations/grundge-line.png) no-repeat center center / contain;
 	}
 }

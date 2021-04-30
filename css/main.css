@@ -272,6 +272,9 @@ body {
     margin-bottom: 0; }
 
 .tpg h1 {
+  font-size: 4.4271vw;
+  line-height: 1.2;
+  padding-bottom: 3.1250vw;
   margin-bottom: 1em; }
 
 .tpg h2 {
@@ -282,6 +285,21 @@ body {
   margin-bottom: 1em; }
   .tpg h2:not(:first-child) {
     margin-top: 3em; }
+
+.page-caption {
+  font-size: 4.4271vw;
+  line-height: 1.2;
+  padding-bottom: 3.1250vw;
+  position: relative; }
+  .page-caption:after {
+    content: '';
+    display: block;
+    width: 89.4792vw;
+    height: 3.1771vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url(../img/decorations/grundge-line.png) no-repeat center center/contain; }
 
 [class^="icon-"], [class*=" icon-"] {
   display: -webkit-inline-box;
