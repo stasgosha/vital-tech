@@ -1,0 +1,30 @@
+
+.application {
+    .search-section {
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 11.9271vw;
+            background-image: url(../img/decorations/Applications-decor.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 27.0833vw;
+            height: 39.7917vw;
+            z-index: 1;
+        }
+    }
+    .info-section{ 
+        .info-section-right {
+            text-align: left;
+            padding-left: 0.7813vw;
+            max-height: 32.2396vw;
+        }
+        .info-section-left {
+            max-width: 67.7083vw;
+            .info-section-img {
+                margin-right: 5.7292vw;
+            }
+        }
+    }
+}

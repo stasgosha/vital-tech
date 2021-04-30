@@ -110,3 +110,21 @@ body{
 		background: url(../img/decorations/grundge-line.png) no-repeat center center / contain;
 	}
 }
+.small-page-caption{
+	@include h3;
+	position: relative;
+    padding-right: 2.6042vw;
+	padding-bottom: 2.6042vw;
+
+	&:after{
+		content: '';
+		display: block;
+		width: calc(89.4792vw - 2.6042vw);
+		height: 3.1771vw;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: url(../img/decorations/grundge-line-small.png) no-repeat center center / contain;
+	}
+
+}

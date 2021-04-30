@@ -1,0 +1,16 @@
+.ingridients {
+    .search-section {
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 11.9271vw;
+            background-image: url(../img/decorations/Ingredients-decor.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 27.0833vw;
+            height: 39.7917vw;
+            z-index: 1;
+        }
+    }
+}

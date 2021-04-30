@@ -1,0 +1,27 @@
+.сompany {
+    .page-content {
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &::before {
+            left: 0;
+            top: 8.9271vw;
+            background-image: url(../../../img/decorations/company.png);
+            width: 26.3542vw;
+            height: 39.7396vw; 
+        }
+        &::after { 
+            right: 0;
+            bottom: 31.2500vw;
+            top: initial; 
+            background-image: url(../../../img/decorations/company-bottom.png); 
+            width: 27.0833vw;
+            height: 39.7917vw; 
+        }
+    }
+}
