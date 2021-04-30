@@ -120,9 +120,10 @@
 .custom-checkbox:checked+label::before {
     border-color: #40b6c6;
     background-color: #40b6c6;
-    background-image: url(../images/icon/mark.png);
+    background-image: url(../img/icons/check.svg);
 }
 
 .custom-checkbox:disabled+label::before {
     background-color: #e9ecef;
 }
+

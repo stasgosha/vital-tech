@@ -761,7 +761,7 @@ body {
 .custom-checkbox:checked + label::before {
   border-color: #40b6c6;
   background-color: #40b6c6;
-  background-image: url(../images/icon/mark.png);
+  background-image: url(../img/icons/check.svg);
 }
 
 .custom-checkbox:disabled + label::before {
@@ -1747,6 +1747,17 @@ body {
 }
 .form-box-select .select-option-box {
   margin-bottom: 1.8229vw;
+  position: relative;
+}
+.form-box-select .select-option-box::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icons/arrow.png);
+  width: 0.6771vw;
+  height: 0.5729vw;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0.9896vw;
 }
 .form-box-select .select-option {
   display: block;
@@ -1789,6 +1800,7 @@ body {
 .form-box-select .form-filter-button + .form-filter-button {
   margin-top: 0.7813vw;
 }
+
 .info-section + .info-section .info-section-wrrap {
   margin-bottom: 2.8646vw;
 }
@@ -2027,7 +2039,7 @@ body {
 .сompany .page-content::before {
   left: 0;
   top: 8.9271vw;
-  background-image: url(../../../img/decorations/company.png);
+  background-image: url(../img/decorations/company.png);
   width: 26.3542vw;
   height: 39.7396vw;
 }
@@ -2035,7 +2047,7 @@ body {
   right: 0;
   bottom: 31.25vw;
   top: initial;
-  background-image: url(../../../img/decorations/company-bottom.png);
+  background-image: url(../img/decorations/company-bottom.png);
   width: 27.0833vw;
   height: 39.7917vw;
 }

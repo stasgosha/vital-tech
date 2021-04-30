@@ -22,6 +22,18 @@
     }
     .select-option-box {
         margin-bottom: 1.8229vw;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url(../img/icons/arrow.png);
+            width: 0.6771vw;
+            height: 0.5729vw;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 0.9896vw;
+
+        }
     }
     .select-option {
         display: block;
@@ -69,6 +81,5 @@
         +.form-filter-button {
             margin-top: 0.7813vw;
         }
-    }
-    .custom-checkbox {}
+    } 
 }
