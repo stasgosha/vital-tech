@@ -275,6 +275,9 @@ body {
   font-size: 4.4271vw;
   line-height: 1.2;
   padding-bottom: 3.1250vw;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 500;
   margin-bottom: 1em; }
 
 .tpg h2 {
@@ -290,6 +293,9 @@ body {
   font-size: 4.4271vw;
   line-height: 1.2;
   padding-bottom: 3.1250vw;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 500;
   position: relative; }
   .page-caption:after {
     content: '';
