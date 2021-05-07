@@ -24,6 +24,14 @@
         background: $primary;
         outline: none;
     }
+	&.filter-btn, &.btn-italic {
+		padding: 0 0.8333vw;
+		border-radius: 0.3125vw;
+		color: #ffffff;
+		font-weight: 400;
+		text-transform: initial;
+		letter-spacing: initial;
+	}
     &.filter-btn {
         min-height: 1.5104vw;
         font-size: 0.9375vw;
