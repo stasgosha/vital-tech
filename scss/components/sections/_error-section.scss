@@ -1,0 +1,34 @@
+.error-section{
+	padding: 5vw 0;
+}
+
+.error-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 3.7500vw;
+	letter-spacing: 0.05em;
+
+	.block-code{
+		font-size: 18.7500vw;
+		letter-spacing: 0.1em;
+		font-weight: 400;
+		width: 58.1250vw;
+		border-bottom: 1px solid #a6a6a6;
+		position: relative;
+		text-align: center;
+		margin-bottom: 3.1250vw;
+
+		&:after{
+			content: '';
+			display: block;
+			width: 1px;
+			height: 1.2500vw;
+			background: #000;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateY(50%);
+		}
+	}
+}

@@ -73,7 +73,8 @@
 		}
 	}
 
-	&.sticky{
+	&.sticky,
+	body:not(.home) &{
 		.stay-in-touch{
 			outline: none;
 			background: #0c7476;
@@ -103,7 +104,8 @@
 			opacity: 1;
 		}
 
-		.sticky &{
+		.sticky &,
+		body:not(.home) &{
 			height: 4vw;
 
 			&.on-light-bg{
@@ -113,6 +115,10 @@
 			&.on-dark-bg{
 				opacity: 0;
 			}
+		}
+
+		.sticky &{
+			height: 4vw;
 		}
 	}
 }

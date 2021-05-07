@@ -1,0 +1,39 @@
+.locations-section{
+	padding: 5.2083vw 0;
+}
+
+.locations-list{
+	max-width: 26.0417vw;
+	display: grid;
+	grid-gap: 3.1250vw;
+
+	.item-caption{
+		font-size: 1.2500vw;
+		line-height: 1.2;
+		font-weight: bold;
+		font-style: italic;
+		margin-bottom: 1.0417vw;
+		text-transform: uppercase;
+	}
+
+	p{
+		font-size: 1.2500vw;
+		line-height: 1.5;
+		text-transform: uppercase;
+		margin-bottom: 1.0417vw;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		a{
+			color: inherit;
+
+			&:hover,
+			&:focus{
+				outline: none;
+				color: $primary;
+			}
+		}
+	}
+}

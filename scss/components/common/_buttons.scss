@@ -1,11 +1,13 @@
 .btn {
     text-align: center;
-    padding: 0 0.8333vw;
-    min-height: 2.5000vw;
-    border-radius: 0.3125vw;
-    font-size: 1.3021vw;
+    padding: 0 2vw;
+    min-height: 2.3958vw;
+    border-radius: 1.1979vw;
+    font-size: 0.8333vw;
     line-height: 1.1;
-    font-weight: 400;
+    color: $primary;
+    font-weight: 700;
+    text-transform: uppercase;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -14,8 +16,9 @@
     appearance: none;
     white-space: nowrap;
     border: 0;
-    color: #fff;
-    background: #AD324E;
+    background: #000;
+    letter-spacing: 0.2em;
+
     &:hover,
     &:focus {
         background: $primary;
