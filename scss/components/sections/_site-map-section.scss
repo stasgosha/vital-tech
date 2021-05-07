@@ -32,6 +32,11 @@
 
 			a{
 				color: inherit;
+
+				&:hover,
+				&:focus{
+					color: $primary;
+				}
 			}
 		}
 	}
@@ -43,7 +48,12 @@
 
 	li{
 		a{
-			color: currentColor
+			color: currentColor;
+
+			&:hover,
+			&:focus{
+				color: $primary;
+			}
 		}
 
 		.link-icon{

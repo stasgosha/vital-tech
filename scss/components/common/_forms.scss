@@ -58,13 +58,60 @@
         }
 		&::before {
             bottom: 0.1042vw; 
-		}
+        }
+
         .btn-row {
             margin-bottom: 0.8854vw;
         }
     }
 }
 
+.form{
+	.input-field,
+	textarea,
+	.select-field select{
+		border: 0;
+		border-bottom: 1px solid #000;
+		appearance: none;
+		background:transparent;
+		border-radius: 0;
+		flex: auto;
+		height: 2.0833vw;
+		text-transform: none;
+		font-size: 1.2500vw;
+		font-weight: 500;
+		color: inherit;
+		font-family: inherit;
+		padding: 0 0.2604vw;
+		outline: none !important;
+		transition: all $t;
+		width: 100%;
+		box-shadow: none;
+
+		&::placeholder{
+			opacity: 1;
+			color: inherit;
+		}
+
+		@media screen and (max-width: 1199px){
+			height: 38px;
+			font-size: 14px;
+			padding: 0 5px;
+		}
+	}
+
+	textarea{
+		resize: none;
+		padding: 0.5208vw 0.2604vw;
+		height: 11.7188vw;
+		display: block;
+
+		@media screen and (max-width: 1199px){
+			padding: 10px 5px;
+			height: 150px;
+		}
+	}
+}
 
 .custom-checkbox {
     position: absolute;
@@ -127,3 +174,68 @@
     background-color: #e9ecef;
 }
 
+.checkbox,
+.wpcf7-checkbox label{
+	display: block;
+
+	.fake-label,
+	.wpcf7-list-item-label{
+		display: block;
+		padding-left: 27px;
+		position: relative;
+		font-size: 18px;
+		line-height: 1;
+		font-weight: 400;
+		color: #000;
+		transition: all $t;
+		cursor: pointer;
+		display: block;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 17px;
+			height: 17px;
+			border: 1px solid #000;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transition: all $t;
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			width: 17px;
+			height: 17px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0;
+			transition: all $t;
+			transform: scale(0.7);
+			background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpath d='M14.71 1.21a1 1 0 00-1.42 0L5.84 8.67 2.71 5.53A1.02 1.02 0 101.29 7l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z' fill='%23000'/%3E%3C/svg%3E") no-repeat center center / contain;
+		}
+	}
+
+	&:hover,
+	&:focus{
+		.fake-label,
+		.wpcf7-list-item-label{
+			opacity: .8;
+		}
+	}
+
+	input:checked + .fake-label,
+	input:checked + .wpcf7-list-item-label{
+		// color: $darkgreen;
+		opacity: 1;
+
+		&:before{
+		}
+
+		&:after{
+			opacity: 1;
+		}
+	}
+}
