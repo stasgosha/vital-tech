@@ -1,0 +1,22 @@
+.about-contact-section {
+    .about-contact-wrrap {
+        b {
+            display: block;
+            font-style: italic;
+            margin-bottom: 1.5625vw;
+        }
+        a,
+        p {
+            font-size: 1.2500vw;
+            text-transform: uppercase;
+        }
+        p {
+            margin: 3.1250vw 0 4.6875vw;
+        }
+        a {
+            margin-top: 0.7813vw;
+            display: block;
+            color: $text-color;
+        }
+    }
+}
