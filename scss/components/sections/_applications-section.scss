@@ -1,0 +1,101 @@
+.applications-section {
+	.applications-slider {
+		.slider-header {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #234649;
+			
+			.slider-nav {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 2.6042vw 12.6250vw 3.1250vw;
+				
+				.slider__item {
+					cursor: pointer;
+					margin-right: 5.9896vw;
+					border: 15px solid transparent;
+					&:last-child {
+						margin-right: 0;
+					}
+					&._active {
+						background-color: #005a5f;
+						border-color: #005a5f;
+						border-radius: 100%;
+						transition: all $t;
+					}
+				}
+				
+			}
+		}
+	}
+	.slider-content {
+		&.slick-slider {
+			user-select: text;
+		}
+		.slider-content__item {
+			.slide-info {
+				padding-left: 3.1250vw;
+				padding-top: 4.6875vw;
+				position: relative;
+				height: 40.3646vw;
+				width: 49.4792vw;
+				clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+				backdrop-filter: blur(10px);
+								
+				&::after {
+					content: "";
+					position: absolute;
+					top: 0; 
+					left: 0;
+					width: 100%; 
+					height: 100%;  
+					z-index: -1;
+					opacity: 0.66;
+					clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+					background-color: #234649;
+				}
+				h3 {
+					@include h3;
+					text-transform: uppercase;
+					color: #fff;
+					padding-bottom: 1.3021vw;
+					border-bottom: 2px solid #fff;
+				}
+				p {
+					padding-top: 1.3021vw;
+					padding-right: 7.8125vw;
+					font-size: 1.8750vw;
+					font-weight: 300;
+					color: #fff;
+					padding-bottom: 4.4271vw;
+					border-bottom: 2px solid #fff;
+				}
+				.actives-list {
+					margin-top: 1.5625vw;
+					margin-left: 13.6458vw;
+					color: #fff;
+					span {
+						font-size: 1.5625vw;
+						font-weight: 500;
+					}
+					ul {
+						li {
+							max-width: 26.0417vw;
+							font-size: 1.2500vw;
+							font-weight: 300;
+							line-height: 2.5000vw;
+							&::before {
+								content:"·";
+								font-size: 1.6667vw;
+								display: inline-block;
+								margin-right: 0.5208vw;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
