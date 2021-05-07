@@ -35,6 +35,9 @@
 			user-select: text;
 		}
 		.slider-content__item {
+			background-repeat: no-repeat;
+			background-size: cover;
+
 			.slide-info {
 				padding-left: 3.1250vw;
 				padding-top: 4.6875vw;
@@ -43,6 +46,7 @@
 				width: 49.4792vw;
 				clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
 				backdrop-filter: blur(10px);
+				background-size: cover;
 								
 				&::after {
 					content: "";
