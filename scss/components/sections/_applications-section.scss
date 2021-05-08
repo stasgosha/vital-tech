@@ -80,7 +80,7 @@
 					margin-top: 1.5625vw;
 					margin-left: 13.6458vw;
 					color: #fff;
-					span {
+					&__title {
 						font-size: 1.5625vw;
 						font-weight: 500;
 					}
@@ -89,7 +89,7 @@
 							max-width: 26.0417vw;
 							font-size: 1.2500vw;
 							font-weight: 300;
-							line-height: 2.5000vw;
+							line-height: 2em;
 							&::before {
 								content:"·";
 								font-size: 1.6667vw;
