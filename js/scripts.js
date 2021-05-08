@@ -27,24 +27,53 @@ document.addEventListener('DOMContentLoaded', function(){
 		});
 	}
 
-	let arrowsButtons = {
-		prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.4 53.5"><path d="M27.7 52.7L1.4 27 27.1.7" fill="none" stroke="#202324" stroke-miterlimit="10" stroke-width="2"/></svg></button>',
-		nextArrow: '<button type="button" class="slick-next" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.4 53.5"><path d="M.7.7L27 26.4 1.3 52.8" fill="none" stroke="#202324" stroke-miterlimit="10" stroke-width="2"/></svg></button>'
-	}
-
-	$('.technology-slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true,
-		fade: true,
-		...arrowsButtons,
-		dots: true,
+	$('.applications-slider .slider-navs').slick({
+		slidesToShow: 4,
+		slidesToScroll: 0,
+		arrows: false,
 		infinite: true,
 		speed: 500,
-		autoplay: true,
-		autoplaySpeed: 4000
+		autoplay: false,
+		autoplaySpeed: 4000,
+		focusOnSelect: true,
+		asNavFor: ".slider-content"
 	});
 
+	$('.applications-slider .slider-content').slick({
+		fade: true,
+		infinite: true,
+		speed: 500,
+		arrows: false,
+		draggable: true,
+		swipe: false,
+	});
+
+
+	$('.slider__item[data-slide]').click(function(e) {
+		e.preventDefault();
+
+		$('.slider__item[data-slide]').removeClass('_active');
+		$(this).addClass('_active');
+		 		
+		$('.applications-slider .slider-content').slick('slickGoTo', $(this).data('slide') - 1);
+	});
+
+	function changeActiveClassForCurrentSlide() {
+		const currentSlide = $('.applications-slider .slider-content').slick('slickCurrentSlide');
+
+		$('.slider__item[data-slide]').removeClass('_active');
+		$(`.slider__item[data-slide='${currentSlide + 1}']`).addClass('_active');
+	}
+
+	$('.applications-slider .slick-prev-custom').on('click', () => {
+		$('.applications-slider .slider-content').slick("slickPrev");
+		changeActiveClassForCurrentSlide();
+	});
+	$('.applications-slider .slick-next-custom').on('click', () => {
+		$('.applications-slider .slider-content').slick("slickNext");
+		changeActiveClassForCurrentSlide();
+	});
+	
 	// Scroll to anchor
 	$(document).on('click', 'a[href^="#"]', function (event) {
 		event.preventDefault();
