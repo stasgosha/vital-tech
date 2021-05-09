@@ -49,12 +49,12 @@
 			padding-right: 2.0833vw;
 			padding-bottom: 2.6042vw;
 
-			&-item {
+			li {
 				margin-bottom: 1.5625vw;
 				&:last-child {
 					margin-bottom: 0;
 				}
-				.item-header, .sub-item {
+				.item-header, ul li {
 					&::before {
 						font-weight: 800;
 						content:"· ";
@@ -65,7 +65,7 @@
 					font-size: 1.5625vw;
 					font-weight: 500;
 				}
-				.sub-item {
+				ul li {
 					margin-top: 0.6250vw;
 					margin-left: 1.4583vw;
 					margin-bottom: 0.5208vw;

@@ -58,11 +58,11 @@
 			margin-left: 27.0833vw;
 			margin-top: 2.0833vw;
 
-			&-item {
+			li {
 				font-size: 1.5625vw;
 				line-height: 2em;
 				&::before {
-					content:"·";
+					content: '· ';
 					font-size: 1.6667vw;
 					display: inline-block;
 				}
