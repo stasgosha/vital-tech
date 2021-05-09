@@ -1,0 +1,41 @@
+.grafiс-info {
+	padding-top: 150px;
+	padding-left: 160px;
+
+	.grafic-info__header {
+		padding-right: 50px;
+
+		&-title {
+			@include tech-title;
+			text-transform: uppercase;
+			font-weight: 600;
+			max-width: none;
+		}
+		&-subtitle {
+			padding-top: 2.6042vw;
+			color: #231f20;
+			font-size: 2.5000vw;
+			line-height: 1.125em;
+			font-style: italic;
+		}
+	}
+	.grafic-info__content {
+		display: flex;
+		align-items: flex-end;
+		padding-top: 4.1667vw;
+
+		.data-info {
+			padding-bottom: 5.9896vw;
+			text-transform: uppercase;
+			.gray {
+				color: #717878;
+			}
+			.blue {
+				color: #3ebcba;
+			}
+			.green {
+				color: #a9c73e;
+			}
+		}
+	}
+}

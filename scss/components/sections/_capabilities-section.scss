@@ -1,0 +1,43 @@
+.capabilities-section {
+	padding-top: 100px;
+
+	.section-header {
+		padding-left: 160px;
+		&__title {
+			@include tech-title;
+			text-transform: uppercase;
+			&::after {
+				top: calc(100% - 0.4167vw);
+			}
+		}
+	}
+	.section-content {
+		position: relative;
+		z-index: -2;
+		&::before {
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background: url(../img/backgrounds/capabilities-bg.jpg) no-repeat center center / cover;
+			opacity: 0.45;
+		}
+	}
+	.benefit-card {
+		.card-caption {
+			margin-top: 2.1875vw;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 1.8750vw;
+			font-weight: 300;
+		}
+		p {
+			color: #fff;
+			font-weight: 300;
+		}
+	}
+}
