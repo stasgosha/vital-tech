@@ -3,6 +3,13 @@
 
 	--header-number-color: #d0d5d6;
 
+	&.tech-page {
+		padding-top: 9.8958vw;
+		.section-image{
+			padding-left: 22.1354vw;
+		}
+	}
+
 	.section-content{
 		padding: 4.6875vw 3.1250vw 3.1250vw;
 	}
@@ -36,6 +43,7 @@
 		li{
 			margin-bottom: 1.4em;
 			position: relative;
+			padding-right: 2.6042vw;
 
 			&:before{
 				content: '';

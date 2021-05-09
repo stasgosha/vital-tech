@@ -1,14 +1,6 @@
 @mixin p{
 	font-size: 1.1458vw;
 	line-height: 1.36;
-
-	@media screen and (max-width: 1199px){
-		font-size: 14px;
-	}
-
-	@media screen and (max-width: 767px){
-		font-size: 18px;
-	}
 }
 
 body{
@@ -39,6 +31,27 @@ body{
 	line-height: 1;
 	font-weight: 500;
 	font-style: italic;
+}
+
+@mixin tech-title{
+	@include h3;
+	position: relative;
+	padding-bottom: 1.9271vw;
+	max-width: 70.0521vw;
+
+	sup {
+		font-size: 0.49em;
+	}	
+	&::after {
+		content: "";
+		display: block;
+		width: 6.3542vw;
+		height: 0.4167vw;
+		position: absolute;
+		left: 0;
+		top: calc(100% + 0.05vw);
+		background: #00d0e0;
+	}
 }
 
 // @mixin h4{
