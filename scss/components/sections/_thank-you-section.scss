@@ -1,8 +1,7 @@
 .thank-you-section{
 	height: 100vh;
 	min-height: 44.6097vw;
-	background: #fff;
-	background: url(../img/backgrounds/thank-you-bg.png) no-repeat left top / cover;
+	background: #fff url(../img/backgrounds/thank-you-bg.png) no-repeat left top / cover;
 	padding: 13.3829vw 3.7175vw 7.4349vw 27.8810vw;
 
 	h1{
@@ -31,6 +30,30 @@
 
 			&.big{
 				font-size: 2.2305vw;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		min-height: 100vh;
+		padding: 20vw 5vw;
+		background-position: left bottom;
+		background-size: auto 70%;
+
+		h1{
+			font-size: 10vw;
+		}
+
+		.section-text{
+			width: 100%;
+			font-size: 5vw;
+
+			p{
+				margin-bottom: 3vw;
+
+				&.big{
+					font-size: 8vw;
+				}
 			}
 		}
 	}

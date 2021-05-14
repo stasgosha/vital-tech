@@ -22,6 +22,16 @@
 	.page-caption{
 		margin-bottom: 9.8958vw;
 	}
+
+	@media screen and (max-width: 991px){
+		margin-top: 28.3333vw;
+		padding-top: 15vw;
+		padding-bottom: 10vw;
+
+		.page-caption{
+			margin-bottom: 12vw;
+		}
+	}
 }
 
 .contacts-form{
@@ -48,6 +58,25 @@
 		.btn{
 			width: 100%;
 			max-width: 14.3229vw;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		.form-fields{
+			grid-template-columns: 1fr;
+			grid-gap: 6vw;
+		}
+
+		.form-agreement{
+			margin-top: 6vw;
+		}
+
+		.form-footer{
+			margin-top: 6vw;
+
+			.btn{
+				max-width: unset;
+			}
 		}
 	}
 }

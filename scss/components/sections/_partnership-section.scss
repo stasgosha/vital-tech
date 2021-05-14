@@ -23,6 +23,17 @@
 		grid-gap: 6.2500vw 2.0833vw;
 		justify-content: space-between;
 	}
+
+	@media screen and (max-width: 991px){
+		.section-grid{
+			grid-template-columns: 1fr;
+			grid-gap: 20.8333vw;
+		}
+
+		.section-inner{
+			padding: 15.2778vw 5.5556vw;
+		}
+	}
 }
 
 .partnership-card{
@@ -65,6 +76,20 @@
 
 			&:before{
 				content: '• ';
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		font-size: 6.1111vw;
+
+		.card-caption{
+			padding-bottom: 3.6111vw;
+			margin-bottom: 3.6111vw;
+			font-size: 7.5000vw;
+
+			&:after{
+				height: 1.1111vw;
 			}
 		}
 	}

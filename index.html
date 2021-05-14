@@ -24,7 +24,7 @@
 							<img src="img/logo-dark.png" alt="" class="on-light-bg">
 						</a>
 					</div>
-					<div class="header-block header-right">
+					<div class="header-block header-right md-hidden">
 						<nav class="top-nav">
 							<ul>
 								<li><a href="#">Technology</a></li>
@@ -43,13 +43,40 @@
 
 						<a href="#" class="stay-in-touch">Let's stay in touch</a>
 					</div>
+					<div class="header-block md-visible">
+						<button class="menu-opener" aria-label="Show navigation">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</button>
+					</div>
 				</div>
 			</div>
+			<nav class="mobile-top-nav">
+				<ul class="mobile-nav">
+					<li><a href="#">Technology</a></li>
+					<li><a href="#">Ingredients</a></li>
+					<li><a href="#">Applications</a></li>
+					<li><a href="#">Resources</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Let's stay in touch</a></li>
+				</ul>
+
+				<ul class="mobile-contacts-list">
+					<li><a href="mailto:info@vitaltech.bio">info@vitaltech.bio</a></li>
+					<li><a href="tel:+972544888888">+ 972 54 4 888 888</a></li>
+				</ul>
+			</nav>
 		</header>
 		<div class="page-content">
-			<section class="first-screen-section" style="background-image: url(img/backgrounds/first-screen-bg.jpg);">
+			<section class="first-screen-section">
+				<picture class="section-bg">
+					<source srcset="img/backgrounds/first-screen-mobile-bg.jpg" media="(max-width: 991px)" />
+					<img src="img/backgrounds/first-screen-bg.jpg" alt="">
+				</picture>
 				<div class="section-inner">
-					<h1 class="page-caption">
+					<h1 class="first-screen-page-caption">
 						<span class="first-line">WELCOME TO A NEW ERA IN</span><br>
 						<strong>Functional Nutrition</strong>
 					</h1>
@@ -329,7 +356,7 @@
 							</div>
 						</div>
 						<div class="section-right">
-							<h3 class="small-caption">Microencapsulated ingredients:</h3>
+							<h3 class="cases-small-caption">Microencapsulated ingredients:</h3>
 
 							<ul>
 								<li>Healthy immune-boosting & inflammation response (Turmeric, Quercetin, Resveratrol and Piperine) </li>

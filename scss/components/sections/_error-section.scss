@@ -1,5 +1,11 @@
 .error-section{
 	padding: 5vw 0;
+
+	@media screen and (max-width: 991px){
+		min-height: 60vh;
+		display: flex;
+		align-items: center;
+	}
 }
 
 .error-block{
@@ -29,6 +35,16 @@
 			left: 50%;
 			bottom: 0;
 			transform: translateY(50%);
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		font-size: 5vw;
+
+		.block-code{
+			font-size: 30vw;
+			width: 100%;
+			margin-bottom: 6vw;
 		}
 	}
 }

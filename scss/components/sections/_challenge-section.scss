@@ -15,21 +15,23 @@
 		display: flex;
 		padding: 0 3.1250vw 12.5000vw;
 
-		.column{
-			padding-top: 14.5833vw;
-			flex: none;
+		@media screen and (min-width: 992px){
+			.column{
+				padding-top: 14.5833vw;
+				flex: none;
 
-			&.left{
-				width: 22.3958vw;
-				padding-right: 3.6458vw;
-			}
+				&.left{
+					width: 22.3958vw;
+					padding-right: 3.6458vw;
+				}
 
-			&.right{
-				width: 25.5208vw;
-				padding-left: 1vw;
+				&.right{
+					width: 25.5208vw;
+					padding-left: 1vw;
 
-				ul{
-					margin-left: 7.6042vw;
+					ul{
+						margin-left: 7.6042vw;
+					}
 				}
 			}
 		}
@@ -58,6 +60,25 @@
 		ul{
 			@include default-ul;
 			font-style: normal;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		background: #fff url(../img/backgrounds/challenge-mobile-bg.jpg) no-repeat center top / contain;
+
+		.section-content{
+			padding: 5.5556vw;
+		}
+
+		.section-bottom{
+			padding: 5.5556vw;
+			display: grid;
+			grid-gap: 8.3333vw;
+
+			.column-caption{
+				font-size: 4.4444vw;
+				margin-bottom: 1em;
+			}
 		}
 	}
 }

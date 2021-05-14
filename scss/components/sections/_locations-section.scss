@@ -1,5 +1,9 @@
 .locations-section{
 	padding: 5.2083vw 0;
+
+	@media screen and (max-width: 991px){
+		padding: 10vw 0;
+	}
 }
 
 .locations-list{
@@ -34,6 +38,21 @@
 				outline: none;
 				color: $primary;
 			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		max-width: unset;
+		grid-gap: 6vw;
+
+		.item-caption{
+			font-size: 6.6667vw;
+			bottom: 5vw;
+		}
+
+		p{
+			font-size: 5vw;
+			margin-bottom: 5vw;
 		}
 	}
 }

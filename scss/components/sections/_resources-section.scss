@@ -20,6 +20,10 @@
 			background: var(--header-border-color);
 		}
 	}
+
+	@media screen and (max-width: 991px){
+		padding-bottom: 16.6667vw;
+	}
 }
 
 .resources-block{
@@ -51,6 +55,24 @@
 			a{
 				color: inherit;
 				font-variant: small-caps;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		grid-template-columns: 1fr;
+		grid-gap: 13.8889vw;
+
+		.column-caption{
+			font-size: 6.6667vw;
+			margin-bottom: 1.3em;
+		}
+
+		ul{
+			font-size: 6.6667vw;
+
+			li{
+				margin-bottom: 5.555vw;
 			}
 		}
 	}

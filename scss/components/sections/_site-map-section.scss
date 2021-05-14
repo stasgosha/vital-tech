@@ -8,6 +8,14 @@
 	.section-header-content{
 		flex: auto;
 	}
+
+	@media screen and (max-width: 991px){
+		padding-bottom: 10vw;
+
+		.default-section-header{
+			padding-bottom: 0;
+		}
+	}
 }
 
 .sitemap-block{
@@ -40,6 +48,22 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 991px){
+		flex-direction: column-reverse;
+		align-items: stretch;
+
+		.block-nav{
+			font-size: 5.555vw;
+			line-height: 1.5;
+			display: block;
+			margin-top: 10vw;
+
+			li{
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 .socials-list{
@@ -60,6 +84,24 @@
 			width: 0.9375vw;
 			height: 0.9375vw;
 			fill: currentcolor;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		display: flex;
+		grid-gap: 0;
+
+		li{
+			margin-right: 13.8889vw;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			.link-icon{
+				width: 5.555vw;
+				height: 5.555vw;
+			}
 		}
 	}
 }

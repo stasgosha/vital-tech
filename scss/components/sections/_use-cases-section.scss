@@ -48,7 +48,7 @@
 		}
 	}
 
-	.small-caption{
+	.cases-small-caption{
 		position: relative;
 		padding-bottom: 0.5208vw;
 		font-size: 1.2500vw;
@@ -67,12 +67,57 @@
 			background: $primary;
 		}
 	}
+
+	@media screen and (max-width: 991px){
+		padding-bottom: 33.3333vw;
+
+		.section-main{
+			padding: 0 5.555vw;
+		}
+
+		.section-top{
+			width: 100%;
+			margin-bottom: 8.333vw;
+			font-size: 8.8889vw;
+		}
+
+		.section-inner{
+			flex-direction: column;
+		}
+
+		.section-left{
+			margin-right: 0;
+			margin-bottom: 20.8333vw;
+			width: 100%;
+		}
+
+		.section-right{
+			width: 100%;
+			border-left: 0;
+			padding: 0;
+		}
+
+		.cases-small-caption{
+			padding-bottom: 0;
+			margin-bottom: 6.6667vw;
+			font-size: 6.6667vw;
+
+			&:before{
+				display: none;
+			}
+		}
+	}
 }
 
 .cases-grid{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1.8750vw;
+
+	@media screen and (max-width: 991px){
+		grid-template-columns: 1fr;
+		grid-gap: 13.8889vw;
+	}
 }
 
 .case-card{
@@ -87,6 +132,14 @@
 			width: 100%;
 			height: auto;
 			display: block;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		font-size: 6.1111vw;
+
+		.card-image{
+			margin-bottom: 2.7778vw;
 		}
 	}
 }

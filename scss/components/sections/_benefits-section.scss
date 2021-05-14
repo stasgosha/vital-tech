@@ -9,6 +9,11 @@
 		@media screen and (min-width: 992px){
 			background-attachment: fixed;
 		}
+
+		@media screen and (max-width: 991px){
+			padding: 27.7778vw 5.555vw;
+			height: auto;
+		}
 	}
 }
 
@@ -16,6 +21,11 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 1.5625vw;
+
+	@media screen and (max-width: 991px){
+		grid-template-columns: 1fr;
+		grid-gap: 22.2222vw;
+	}
 }
 
 .benefit-card{
@@ -45,5 +55,23 @@
 	p{
 		font-size: 1.2500vw;
 		line-height: 1.25;
+	}
+
+	@media screen and (max-width: 991px){
+		.card-image{
+			width: 47.2222vw;
+			height: 47.2222vw;
+			margin-bottom: 8.3333vw;
+		}
+
+		.card-caption{
+			font-size: 11.1111vw;
+			margin-bottom: 5.5556vw;
+		}
+
+		p{
+			font-size: 6.6667vw;
+			line-height: 1.25;
+		}
 	}
 }

@@ -25,7 +25,8 @@
 		bottom: 0;
 	}
 
-	&.sticky{
+	&.sticky,
+	&.nav-opened{
 		background: #fff;
 	}
 
@@ -81,6 +82,23 @@
 			color: #fff;
 		}
 	}
+
+	@media screen and (max-width: 991px){
+		padding: 3.3333vw 0;
+
+		.header-inner{
+			align-items: center;
+		}
+
+		&:after{
+			display: none;
+		}
+
+		&.sticky,
+		&.nav-opened{
+			background: #eaeaea;
+		}
+	}
 }
 
 .logo-block{
@@ -105,6 +123,7 @@
 		}
 
 		.sticky &,
+		.nav-opened &,
 		body:not(.home) &{
 			height: 4vw;
 
@@ -119,6 +138,14 @@
 
 		.sticky &{
 			height: 4vw;
+		}
+
+		@media screen and (max-width: 991px){
+			height: 21.9444vw !important;
+
+			.sticky &{
+				height: 13.8889vw !important;
+			}
 		}
 	}
 }
@@ -236,6 +263,112 @@
 			&.current-menu-item{
 				a{
 					cursor: default;
+				}
+			}
+		}
+	}
+}
+
+.mobile-top-nav{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	transform: translateY(-40px);
+	opacity: 0;
+	visibility: hidden;
+	transition: all $t;
+	--header-height:28.3333vw;
+	height: calc(100vh - var(--header-height));
+	background: #eaeaea;
+	overflow-y: auto;
+	overscroll-behavior-y: contain;
+
+	.sticky &{
+		--header-height: 20.5556vw;
+	}
+
+	&.opened{
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+}
+
+.mobile-nav{
+	display: grid;
+	grid-gap: 4vw;
+
+	li{
+		border-bottom: 1px solid #989898;
+
+		a{
+			font-size: 5.0000vw;
+			display: block;
+			line-height: 12.2222vw;
+			font-weight: 500;
+			text-transform: uppercase;
+			color: #000000;
+			padding: 0 5.5556vw;
+		}
+
+		&.current-menu-item,
+		&.current-menu-parent{
+			a{
+				color: $primary;
+			}
+		}
+		
+		&.current-menu-item{
+			a{
+				cursor: default;
+			}
+		}
+	}
+}
+
+.mobile-contacts-list{
+	margin-top: 16.6667vw;
+	margin-bottom: 5.5556vw;
+
+	li{
+		border-bottom: 1px solid #989898;
+
+		&:last-child{
+			border-bottom: 0;
+		}
+
+		a{
+			display: flex;
+			align-items: center;
+			font-size: 5.0000vw;
+			line-height: 12.2222vw;
+			position: relative;
+			padding-left: 15.5556vw;
+			color: #000;
+
+			&:before{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 5.5556vw;
+			}
+
+			&[href^="mailto"]{
+				&:before{
+					width: 4.4444vw;
+					height: 3.0556vw;
+					background: url(../img/icons/envelope.png) no-repeat center center / contain;
+				}
+			}
+
+			&[href^="tel"]{
+				&:before{
+					width: 3.3333vw;
+					height: 3.3333vw;
+					background: url(../img/icons/phone.png) no-repeat center center / contain;
 				}
 			}
 		}

@@ -41,6 +41,26 @@
 	.home &{
 		display: none;
 	}
+
+	@media screen and (max-width: 991px){
+		padding: 10vw 0;
+
+		.footer-inner{
+			padding: 0 5.555vw;
+			max-width: unset;
+			flex-direction: column;
+		}
+
+		.footer-block{
+			margin-right: 0;
+		}
+
+		.footer-nav-block{
+			&:before{
+				display: none;
+			}
+		}
+	}
 }
 
 .footer-nav{
@@ -64,6 +84,17 @@
 			&:focus{
 				color: $primary;
 			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		font-size: 5.555vw;
+		line-height: 1.5;
+		display: block;
+		margin-top: 10vw;
+
+		li{
+			margin-right: 0;
 		}
 	}
 }

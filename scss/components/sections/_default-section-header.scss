@@ -53,6 +53,46 @@
 			background: $primary;
 		}
 	}
+
+	@media screen and (max-width: 991px){
+		flex-direction: column;
+		border-bottom: 0;
+		padding-bottom: 6.6667vw;
+
+		.section-header-number{
+			width: 100%;
+			border-right: 0;
+			min-height: 38.8889vw;
+			padding-left: 5.5556vw;
+
+			.number{
+				font-size: 37.2222vw;
+				transform: translateX(0);
+				line-height: 38.8889vw;
+			}
+
+			.text{
+				font-size: 4.4444vw;
+				height: 38.8889vw;
+				right: auto;
+				left: 31.9444vw;
+			}
+		}
+
+		.section-header-content{
+			padding-top: 11.6667vw;
+			padding-left: 5.555vw;
+			padding-right: 5.555vw;
+
+			&:after{
+				bottom: auto;
+				left: 5.5556vw;
+				top: 0;
+				width: 10.5556vw;
+				height: 2.2222vw;
+			}
+		}
+	}
 }
 
 .section-caption{
@@ -82,6 +122,15 @@
 			.small{
 				@include h3;
 			}
+
+			@media screen and (max-width: 991px){
+				flex-direction: column;
+				align-items: stretch;
+
+				strong{
+					margin: 0 0 11.6667vw;
+				}
+			}
 		}
 	}
 
@@ -90,5 +139,9 @@
 		line-height: 1.4;
 		font-weight: 500;
 		font-style: italic;
+
+		@media screen and (max-width: 991px){
+			font-size: 5.555vw;
+		}
 	}
 }
