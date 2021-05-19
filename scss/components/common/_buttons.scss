@@ -1,65 +1,95 @@
 .btn {
-    text-align: center;
-    padding: 0 2vw;
-    min-height: 2.3958vw;
-    border-radius: 1.1979vw;
-    font-size: 0.8333vw;
-    line-height: 1.1;
-    color: $primary;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all $t;
-    cursor: pointer;
-    appearance: none;
-    white-space: nowrap;
-    border: 0;
-    background: #000;
-    letter-spacing: 0.2em;
+	text-align: center;
+	padding: 0 2vw;
+	min-height: 2.3958vw;
+	border-radius: 1.1979vw;
+	font-size: 0.8333vw;
+	line-height: 1.1;
+	color: $primary;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: all $t;
+	cursor: pointer;
+	appearance: none;
+	white-space: nowrap;
+	border: 0;
+	background: #000;
+	letter-spacing: 0.2em;
 
-    &:hover,
-    &:focus {
-        background: $primary;
-        outline: none;
-    }
-	&.filter-btn, &.btn-italic {
+	&:hover,
+	&:focus {
+		background: $primary;
+		color: #fff;
+		outline: none;
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 0 5vw;
+		font-size: 4vw;
+		border-radius: 3vw;
+	}
+
+	&.filter-btn,
+	&.btn-italic {
 		padding: 0 0.8333vw;
 		border-radius: 0.3125vw;
 		color: #ffffff;
 		font-weight: 400;
 		text-transform: initial;
 		letter-spacing: initial;
+
+		@media screen and (max-width: 991px){
+			padding: 0 3vw;
+			border-radius: 1vw;
+		}
 	}
-    &.filter-btn {
-        min-height: 1.5104vw;
-        font-size: 0.9375vw;
-        background: #40b6c6;
-        &:hover,
-        &:focus {
-            background: #AD324E;
-            outline: none;
-        }
-    }
-    &.btn-italic {
-        background: $primary;
+
+	&.filter-btn {
+		min-height: 1.5104vw;
+		font-size: 0.9375vw;
+		background: #40b6c6;
+
+		&:hover,
+		&:focus {
+			background: #AD324E;
+			outline: none;
+		}
+
+		@media screen and (max-width: 991px){
+			min-height: 8vw;
+			font-size: 4vw;
+		}
+	}
+
+	&.btn-italic {
+		background: $primary;
 		font-style: italic;
 		font-size: 1.2500vw;
 		font-weight: 500;
 		min-height: 2.1875vw;
 		border-radius: 0.5208vw;
-        &:hover,
-        &:focus {
-            background: #AD324E;
-            outline: none;
-        }
-    }
-    @media screen and (max-width: 1199px) {
-        height: 38px;
-        border-radius: 5px;
-        font-size: 14px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+
+		&:hover,
+		&:focus {
+			background: #AD324E;
+			outline: none;
+		}
+
+		@media screen and (max-width: 991px){
+			min-height: 8vw;
+			font-size: 4vw;
+			border-radius: 2vw;
+		}
+	}
+
+	// @media screen and (max-width: 1199px) {
+	// 	height: 38px;
+	// 	border-radius: 5px;
+	// 	font-size: 14px;
+	// 	padding-left: 20px;
+	// 	padding-right: 20px;
+	// }
 }

@@ -1,9 +1,9 @@
-.grafiс-info {
-	padding-top: 150px;
-	padding-left: 160px;
+.grafic-info {
+	padding-top: 7.8125vw;
+	padding-left: 8.3333vw;
 
 	.grafic-info__header {
-		padding-right: 50px;
+		padding-right: 2.6042vw;
 
 		&-title {
 			@include tech-title;
@@ -37,5 +37,34 @@
 				color: #a9c73e;
 			}
 		}
+	}
+
+	@media screen and (max-width: 991px){
+		.grafic-info__header{
+			padding-right: 0;
+
+			&-subtitle{
+				padding-top: 5vw;
+				font-size: 6vw;
+			}
+		}
+
+		.grafic-info__content{
+			flex-direction: column;
+			align-items: stretch;
+			padding-top: 10vw;
+
+			.data-info{
+				padding-bottom: 13vw;
+			}
+		}
+	}
+}
+
+.grafic{
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
 	}
 }

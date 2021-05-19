@@ -2,4 +2,19 @@
 	background-color: #f0f2f2;
 	margin-top: 6.5104vw;
 	height: 69.0104vw;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+
+	&:after{
+		content: '';
+		display: block;
+		width: 31.7708vw;
+		height: 36.2500vw;
+		background: url(../img/decorations/tech-decor.png) no-repeat left bottom / contain;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
 }

@@ -6,16 +6,24 @@
 	<title>Home | Vital tech</title>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,800;1,300;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/slick.min.css">
 	<link rel="stylesheet" href="css/slick-theme.min.css">
 
+	<link rel="stylesheet" href="css/animate.min.css">
+
 	<link rel="stylesheet" href="css/main.css">
+
+	<style>
+		.wow{
+			visibility: hidden;
+		}
+	</style>
 </head>
 <body class="home">
 	<div class="wrapper" id="top">
-		<header class="header">
+		<header class="header wow fadeInDown animated">
 			<div class="container">
 				<div class="header-inner">
 					<div class="header-block">
@@ -75,13 +83,19 @@
 					<source srcset="img/backgrounds/first-screen-mobile-bg.jpg" media="(max-width: 991px)" />
 					<img src="img/backgrounds/first-screen-bg.jpg" alt="">
 				</picture>
+
+				<!-- Если на фоне видео -->
+				<!-- <div class="section-bg">
+					<video src="" playsinline muted loop autoplay></video>
+				</div> -->
+
 				<div class="section-inner">
-					<h1 class="first-screen-page-caption">
+					<h1 class="first-screen-page-caption wow fadeInUp">
 						<span class="first-line">WELCOME TO A NEW ERA IN</span><br>
 						<strong>Functional Nutrition</strong>
 					</h1>
 
-					<div class="section-text">
+					<div class="section-text wow fadeInUp" data-wow-delay="0.2s">
 						<p>Disrupting the food & beverage industry with performance-enhancing micro-encapsulated bioactives </p>
 					</div>
 				</div>
@@ -89,11 +103,11 @@
 
 			<section class="challenge-section">
 				<div class="default-section-header">
-					<div class="section-header-number">
+					<div class="section-header-number wow fadeInUp">
 						<div class="number">/02</div>
 						<p class="text">CHALLENGE</p>
 					</div>
-					<div class="section-header-content">
+					<div class="section-header-content wow fadeInUp" data-wow-delay="0.2s">
 						<div class="section-caption">
 							<h2 class="sc-title with-small-text">
 								<strong>What if...</strong>
@@ -103,7 +117,7 @@
 					</div>
 				</div>
 
-				<div class="section-content">
+				<div class="section-content wow fadeInUp">
 					<div class="section-top-text">
 						<ul>
 							<li>Removing all barriers to ultimate functional nutrition</li>
@@ -114,7 +128,7 @@
 				</div>
 
 				<div class="section-bottom">
-					<div class="column left">
+					<div class="column left wow fadeInLeft">
 						<h3 class="column-caption">APPLICATIONS</h3>
 						<ul>
 							<li>Sports nutrition</li>
@@ -125,10 +139,10 @@
 							<li>Post-alcohol recovery</li>
 						</ul>
 					</div>
-					<div class="bottom-image">
+					<div class="bottom-image wow fadeInUp">
 						<img src="img/content-images/challenge-image.png" alt="">
 					</div>
-					<div class="column right">
+					<div class="column right wow fadeInRight">
 						<h3 class="column-caption">Functional Actives</h3>
 						<ul>
 							<li>Nootropics</li>
@@ -144,11 +158,11 @@
 
 			<section class="solution-section">
 				<div class="default-section-header">
-					<div class="section-header-number">
+					<div class="section-header-number wow fadeInUp">
 						<div class="number">/03</div>
 						<p class="text">Solution</p>
 					</div>
-					<div class="section-header-content">
+					<div class="section-header-content wow fadeInUp" data-wow-delay="0.2s">
 						<div class="section-caption">
 							<h2 class="sc-title">Introducing <strong>NT<sup>2</sup></strong></h2>
 							<p class="sc-subtitle">(Nutrient Transport Technology™)</p>
@@ -157,14 +171,14 @@
 				</div>
 
 				<div class="section-content">
-					<div class="section-top">
+					<div class="section-top wow fadeInUp">
 						<p>Disrupting functional ingredient delivery with sub 250μ GRAS micro-encapsulated particles </p>
 					</div>
 				</div>
 
 				<div class="section-image">
-					<img src="img/content-images/sphere.png" alt="">
-					<ul class="solutions-list">
+					<img src="img/content-images/sphere.png" alt="" class="wow fadeInLeft">
+					<ul class="solutions-list wow fadeInRight">
 						<li>Bioavailability enhancing matrix</li>
 						<li>Sustained-release control</li>
 						<li>Water resistance & disintegration trigger control</li>
@@ -174,18 +188,18 @@
 
 			<section class="applications-section">
 				<div class="default-section-header">
-					<div class="section-header-number">
+					<div class="section-header-number wow fadeInUp">
 						<div class="number">/04</div>
 						<p class="text">Applications</p>
 					</div>
-					<div class="section-header-content">
+					<div class="section-header-content wow fadeInUp" data-wow-delay="0.2s">
 						<div class="section-caption">
 							<h2 class="sc-title">Some sample applications...</h2>
 						</div>
 					</div>
 				</div>
 				<div class="applications-slider">
-					<div class="slider-header">
+					<div class="slider-header wow fadeInUp">
 						<button type="button" class="slick-prev-custom" aria-label="Previous">
 							<img src="img/applications-slider/arrrow-left.png" alt="arrrow-left">
 						</button>
@@ -207,7 +221,7 @@
 							<img src="img/applications-slider/arrrow-right.png" alt="arrrow-right">
 						</button>
 					</div>
-					<div class="slider-content">
+					<div class="slider-content wow fadeInUp">
 						<div class="slider-content__item" style="background-image: url('img/applications-slider/app_slide-1.jpg');">
 							<div class="slide-info" style="background-image: url('img/applications-slider/grunge.png');">
 								<h3>Sport nutrition</h3>
@@ -266,11 +280,11 @@
 
 			<section class="benefits-section">
 				<div class="default-section-header">
-					<div class="section-header-number">
+					<div class="section-header-number wow fadeInUp">
 						<div class="number">/05</div>
 						<p class="text">Benefits</p>
 					</div>
-					<div class="section-header-content">
+					<div class="section-header-content wow fadeInUp" data-wow-delay="0.2s">
 						<div class="section-caption">
 							<h2 class="sc-title">Main Benefits</h2>
 						</div>
@@ -279,7 +293,7 @@
 
 				<div class="section-content">
 					<div class="benefits-grid">
-						<div class="benefit-card">
+						<div class="benefit-card wow fadeInUp" data-wow-delay="0.0s">
 							<div class="card-image">
 								<img src="img/content-images/benefits/1.png" alt="">
 							</div>
@@ -287,7 +301,7 @@
 							<p>Excellent consumption & sensory experience even at effective, ultra-high dosing regimens</p>
 						</div>
 
-						<div class="benefit-card">
+						<div class="benefit-card wow fadeInUp" data-wow-delay="0.2s">
 							<div class="card-image">
 								<img src="img/content-images/benefits/2.png" alt="">
 							</div>
@@ -295,7 +309,7 @@
 							<p>Creation of new application categories that are not possible today</p>
 						</div>
 
-						<div class="benefit-card">
+						<div class="benefit-card wow fadeInUp" data-wow-delay="0.4s">
 							<div class="card-image">
 								<img src="img/content-images/benefits/3.png" alt="">
 							</div>
@@ -303,7 +317,7 @@
 							<p>Unlimited options for ingredients selection, dosage foul-taste isolation, time-to-impact & prolonged effect</p>
 						</div>
 
-						<div class="benefit-card">
+						<div class="benefit-card wow fadeInUp" data-wow-delay="0.6s">
 							<div class="card-image">
 								<img src="img/content-images/benefits/4.png" alt="">
 							</div>
@@ -316,11 +330,11 @@
 
 			<section class="use-cases-section">
 				<div class="default-section-header">
-					<div class="section-header-number">
+					<div class="section-header-number wow fadeInUp">
 						<div class="number">/06</div>
 						<p class="text">Use Case</p>
 					</div>
-					<div class="section-header-content">
+					<div class="section-header-content wow fadeInUp" data-wow-delay="0.2s">
 						<div class="section-caption">
 							<h2 class="sc-title">Proven, Tested and Trusted</h2>
 						</div>
@@ -328,12 +342,12 @@
 				</div>
 
 				<div class="section-main">
-					<div class="section-top">
+					<div class="section-top wow fadeInUp">
 						<p>Fast-acting, wellbeing-enhancing, mix-n-drink product line. Supporting rapid recovery and improved function after moderate+ alcohol consumption. </p>
 					</div>
 
 					<div class="section-inner">
-						<div class="section-left">
+						<div class="section-left wow fadeInUp">
 							<div class="cases-grid">
 								<div class="case-card">
 									<div class="card-image">
@@ -355,7 +369,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="section-right">
+						<div class="section-right wow fadeInUp" data-wow-delay="0.2s">
 							<h3 class="cases-small-caption">Microencapsulated ingredients:</h3>
 
 							<ul>
@@ -373,11 +387,11 @@
 
 			<section class="partnership-section" style="background-image: url(img/backgrounds/partnership-bg.jpg);">
 				<div class="default-section-header">
-					<div class="section-header-number">
+					<div class="section-header-number wow fadeInUp">
 						<div class="number">/07</div>
 						<p class="text">Partnership</p>
 					</div>
-					<div class="section-header-content">
+					<div class="section-header-content wow fadeInUp" data-wow-delay="0.2s">
 						<div class="section-caption">
 							<h2 class="sc-title">Let’s work together</h2>
 						</div>
@@ -386,32 +400,32 @@
 
 				<div class="section-inner">
 					<div class="section-grid">
-						<div class="partnership-card">
+						<div class="partnership-card wow fadeInUp" data-wow-delay="0.0s">
 							<h3 class="card-caption">Food & Beverage</h3>
 							<p>Next-generation ingredients and add-on formulations, supporting new & disruptive functional applications not possible today, coupled with a superb sensory experience</p>
 						</div>
 
-						<div class="partnership-card">
+						<div class="partnership-card wow fadeInUp" data-wow-delay="0.1s">
 							<h3 class="card-caption">Supplement brands</h3>
 							<p>Differentiate your brand with next-generation standardized ingredients, generating an unmatched consumed-sensed difference </p>
 						</div>
 
-						<div class="partnership-card">
+						<div class="partnership-card wow fadeInUp" data-wow-delay="0.2s">
 							<h3 class="card-caption">Medical food brands</h3>
 							<p>Create powerful, high-dose & effective natural formulations (solid and liquid products), for existing and new patients, coupled with a superb sensory experience</p>
 						</div>
 
-						<div class="partnership-card">
+						<div class="partnership-card wow fadeInUp" data-wow-delay="0.3s">
 							<h3 class="card-caption">Pharma brands</h3>
 							<p>Incorporate pharma-class, properties-enhanced functional ingredients and add-on formulations in your branded products: bars, shakes and meal-replacements</p>
 						</div>
 
-						<div class="partnership-card">
+						<div class="partnership-card wow fadeInUp" data-wow-delay="0.4s">
 							<h3 class="card-caption">Ingredient distributors</h3>
 							<p>Bring utmost innovation in food and beverage functional ingredients to your loyal customer base</p>
 						</div>
 
-						<div class="partnership-card">
+						<div class="partnership-card wow fadeInUp" data-wow-delay="0.5s">
 							<h3 class="card-caption">Ingredient manufacturers</h3>
 							<p>Reach new & unexplored markets for your ingredients, by adding one or more of the following innovative functional properties: </p>
 
@@ -430,11 +444,11 @@
 
 			<section class="resources-section">
 				<div class="default-section-header">
-					<div class="section-header-number">
+					<div class="section-header-number wow fadeInUp">
 						<div class="number">/08</div>
 						<p class="text">Resources</p>
 					</div>
-					<div class="section-header-content">
+					<div class="section-header-content wow fadeInUp" data-wow-delay="0.2s">
 						<div class="resources-block">
 							<div class="column">
 								<h3 class="column-caption">Downloads</h3>
@@ -460,11 +474,11 @@
 
 			<section class="site-map-section">
 				<div class="default-section-header">
-					<div class="section-header-number">
+					<div class="section-header-number wow fadeInUp">
 						<div class="number">/09</div>
 						<p class="text">Site map</p>
 					</div>
-					<div class="section-header-content">
+					<div class="section-header-content wow fadeInUp" data-wow-delay="0.2s">
 						<div class="sitemap-block">
 							<ul class="block-nav">
 								<li><a href="#">Technology</a></li>
@@ -509,7 +523,7 @@
 				</div>
 			</section>
 		</div>
-		<footer class="footer" role="contentinfo">
+		<footer class="footer wow fadeInUp" role="contentinfo">
 			<div class="footer-inner">
 				<div class="footer-block">
 					<ul class="socials-list">
@@ -559,7 +573,7 @@
 	<div class="modal video-modal" id="video-modal" tabindex="-1">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<button class="modal-close" aria-label="Закрыть попап">
+				<button class="modal-close" aria-label="Close modal">
 					<svg class="btn-icon">
 						<use xlink:href="img/icons-sprite.svg#modal-close"></use>
 					</svg>
@@ -574,6 +588,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="//www.youtube.com/iframe_api"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

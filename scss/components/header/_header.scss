@@ -69,7 +69,7 @@
 		&:hover,
 		&:focus{
 			outline: none;
-			background: #0c7476;
+			background: $azure;
 			color: #fff;
 		}
 	}
@@ -78,7 +78,7 @@
 	body:not(.home) &{
 		.stay-in-touch{
 			outline: none;
-			background: #0c7476;
+			background: $azure;
 			color: #fff;
 		}
 	}

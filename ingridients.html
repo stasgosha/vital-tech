@@ -2,324 +2,394 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ingridients | Vital tech</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Ingridients | Vital tech</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,800;1,300;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,800;1,300;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/slick.min.css">
-    <link rel="stylesheet" href="css/slick-theme.min.css">
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/slick-theme.min.css">
 
-    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="ingridients">
-    <div class="wrapper" id="top">
-        <header class="header">
-            <div class="container">
-                <div class="header-inner">
-                    <div class="header-block">
-                        <a href="#" class="logo-block">
-                            <img src="img/logo.png" alt="" class="on-dark-bg">
-                            <img src="img/logo-dark.png" alt="" class="on-light-bg">
-                        </a>
-                    </div>
-                    <div class="header-block header-right">
-                        <nav class="top-nav">
-                            <ul>
-                                <li><a href="#">Technology</a></li>
-                                <li><a href="#">Ingredients</a></li>
-                                <li><a href="#">Applications</a></li>
-                                <li><a href="#">Resources</a></li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Company</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
+	<div class="wrapper" id="top">
+		<header class="header wow fadeInDown animated">
+			<div class="container">
+				<div class="header-inner">
+					<div class="header-block">
+						<a href="index.html" class="logo-block">
+							<img src="img/logo.png" alt="" class="on-dark-bg">
+							<img src="img/logo-dark.png" alt="" class="on-light-bg">
+						</a>
+					</div>
+					<div class="header-block header-right md-hidden">
+						<nav class="top-nav">
+							<ul>
+								<li><a href="#">Technology</a></li>
+								<li><a href="#">Ingredients</a></li>
+								<li><a href="#">Applications</a></li>
+								<li><a href="#">Resources</a></li>
+								<li class="menu-item-has-children">
+									<a href="#">Company</a>
+									<ul class="sub-menu">
+										<li><a href="#">About us</a></li>
+										<li><a href="#">Careers</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
 
-                        <a href="#" class="stay-in-touch">Let's stay in touch</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="page-content top-header">
-            <section class="search-section">
-                <div class="container">
-                    <h1 class="page-caption">
-                        <strong>Ingredients</strong>
-                    </h1>
-                    <div class="form form-filter-section">
-                        <form>
-                            <div class="form-select-row">
-                                <div class="form-box-select">
-                                    <div class="btn-row">
-                                        <a href="#" class="btn filter-btn">Select all</a>
-                                        <a href="#" class="btn filter-btn">Clear</a>
-                                    </div>
-                                    <span class="label-text">Filter by Name</span>
-                                    <div class="select-option-box">
-                                        <select class="select-option">
-                                            <option>All</option>
-                                            <option>Sports Nutrition</option>
-                                            <option>Long-acting Energy</option>
-                                        </select>
-                                    </div>
-                                    <div class="box-checkbox">
-                                        <div class="box-checkbox-scroll">
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="all" type="checkbox" value="">
-                                                <label for="all">All</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="GuarnaCSR" type="checkbox" value="">
-                                                <label for="GuarnaCSR">GuarnaCSR</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="CaffeineCSR" type="checkbox" value="">
-                                                <label for="CaffeineCSR">CaffeineCSR</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="WillowCSR™" type="checkbox" value="">
-                                                <label for="WillowCSR™">WillowCSR™</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="GingerCSR™" type="checkbox" value="">
-                                                <label for="GingerCSR™">GingerCSR™</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="GinsengCSR™" type="checkbox" value="">
-                                                <label for="GinsengCSR™">GinsengCSR™</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="TurmericEBA™" type="checkbox" value="">
-                                                <label for="TurmericEBA™">TurmericEBA™</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="QuercetinEBA™" type="checkbox" value="">
-                                                <label for="QuercetinEBA™">QuercetinEBA™</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="ResveratrolEBA™" type="checkbox" value="">
-                                                <label for="ResveratrolEBA™">ResveratrolEBA™</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="PiperineEBA™" type="checkbox" value="">
-                                                <label for="PiperineEBA™">PiperineEBA™</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-box-select">
-                                    <div class="btn-row">
-                                        <a href="#" class="btn filter-btn">Select all</a>
-                                        <a href="#" class="btn filter-btn">Clear</a>
-                                    </div>
-                                    <span class="label-text">Filter by Property</span>
-                                    <div class="select-option-box">
-                                        <select class="select-option">
-                                            <option>All</option>
-                                            <option>Sports Nutrition</option>
-                                            <option>Long-acting Energy</option>
-                                        </select>
-                                    </div> 
-                                    <div class="box-checkbox">
-                                        <div class="box-checkbox-scroll">
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="all" type="checkbox" value="">
-                                                <label for="all">All</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Nootropic" type="checkbox" value="">
-                                                <label for="Nootropic">Nootropic</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Adaptogenic" type="checkbox" value="">
-                                                <label for="Adaptogenic">Adaptogenic</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Focus & clarity" type="checkbox" value="">
-                                                <label for="Focus & clarity">Focus & clarity</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Alertness" type="checkbox" value="">
-                                                <label for="Alertness">Alertness</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Mental performance" type="checkbox" value="">
-                                                <label for="Mental performance">Mental performance</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Cognitive performance" type="checkbox" value="">
-                                                <label for="Cognitive performance">Cognitive performance</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Motivation" type="checkbox" value="">
-                                                <label for="Motivation">Motivation</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Mood" type="checkbox" value="">
-                                                <label for="Mood">Mood</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Stress" type="checkbox" value="">
-                                                <label for="Stress">Stress</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Muscle power" type="checkbox" value="">
-                                                <label for="Muscle power">Muscle power</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Muscle soreness" type="checkbox" value="">
-                                                <label for="Muscle soreness">Muscle soreness</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Muscle cramps" type="checkbox" value="">
-                                                <label for="Muscle cramps">Muscle cramps</label>
-                                            </div>
-                                            <div class="form-filter-button">
-                                                <input class="custom-checkbox" id="Muscle recovery" type="checkbox" value="">
-                                                <label for="Muscle recovery">Muscle recovery</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <section class="info-section">
-                <div class="container">
-                    <h3 class="page-caption small-page-caption">
-                        <strong>GingerCSR™</strong>
-                    </h3>
-                    <div class="info-section-wrrap">
-                        <div class="info-section-top">
-                            <div class="info-section-left">
-                                <img src="img/content-images/Ingridients/GingerCSR™.png" alt="" class="info-section-img">
-                                <div class="info-section-text">
-                                    <p>
-                                        GingerCSR™ micro-encapsulates a standardized extract of the Zingiber Officinale plant. Two extract versions are used: a powdered Ginger extract containing 30% Gingerols and Shogaols; and; a Ginger oil extract containing 50% Gingerols and Shogaols.
-                                    </p>
-                                    <p>
-                                        With significant dosing levels, GingerCSR™ completely isolates the notoriously pungent extracts of high-purity ginger, providing a material competitive advantage to Ginger incorporated food and beverage products
-                                    </p>
-                                    <p>
-                                        The ingredient is optimal for incorporation into bars, shakes, meal replacement products and mix-n-drink beverages
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="info-section-right">
-                                <img src="img/graphs/Caffeine-Conv.svg" alt="">
-                                <a href="#" class="btn btn-italic">Click here for more info.</a>
-                            </div>
-                        </div>
-                        <div class="info-section-bottom">
-                            <div class="info-section-list-box">
-                                <div class="list-cation">Keys benefits</div>
-                                <ul class="info-section-list">
-                                    <li>Incidental nausea relief</li>
-                                    <li>Incidental headache relief</li>
-                                    <li>Incidental pain relief</li>
-                                    <li>Incidental fever relief</li>
-                                    <li>Incidental inflammation relief</li>
-                                    <li>Muscle cramps relief</li>
-                                    <li>Gastrointestinal health enhancer</li>
-                                    <li>Free-radicals scavenging</li>
-                                </ul>
-                            </div>
-                            <div class="info-section-list-box">
-                                <div class="list-cation">Keys Properties</div>
-                                <ul class="info-section-list">
-                                    <li>Complete ultra-pungent taste isolation at high dosing</li>
-                                    <li>Particle size under 250 microns: Below human mouth sensory threshold</li>
-                                    <li>Range of sustained release profiles </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="info-section">
-                <div class="container"> 
-                    <h3 class="page-caption small-page-caption">
-                        <strong>CaffeineCSR™</strong>
-                    </h3>
-                    <div class="info-section-wrrap">
-                        <div class="info-section-top">
-                            <div class="info-section-left">
-                                <img src="img/content-images/Ingridients/CaffeineCSR™.png" alt="" class="info-section-img">
-                                <div class="info-section-text">
-                                    <p>CaffeineCSR™ micro-encapsulates a standardized extract of Caffeine. The sour ce of Caffeine can be natural (as an extract of Coffea Arabica) or synthetic, both with 98% purity.</p>
-                                    <p>With significant dosing levels, CaffeineCSR™ completely isolates the bitter and unfavorable sensory impact of Caffeine, providing a material competitive advantage to standard Caffeine incorporated food and beverage
-                                        products
-                                    </p>
-                                    <p>The ingredient is optimal for incorporation into bars, shakes, meal replacement products and mix-n-drink beverages beverages
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="info-section-right">
-                                <img src="img/graphs/Caffeine-Conv.svg" alt="">
-                                <a href="#" class="btn btn-italic">Click here for more info.</a>
-                            </div>
-                        </div>
-                        <div class="info-section-bottom">
-                            <div class="info-section-list-box">
-                                <div class="list-cation">Keys benefits</div>
-                                <ul class="info-section-list">
-                                    <li>Hours of pleasant, jitteriness-free impact</li>
-                                    <li>Superb mouthfeel</li>
-                                    <li>Spike & crash avoidance</li>
-                                    <li>Alertness enhancer</li>
-                                    <li>Focus & clarity enhancer</li>
-                                    <li>Mood enhancer</li>
-                                    <li>Mental performance enhancer</li>
-                                    <li>Motivation enhancer</li>
-                                    <li>Muscle power enhancer </li>
-                                </ul>
-                            </div>
-                            <div class="info-section-list-box">
-                                <div class="list-cation">Keys Properties</div>
-                                <ul class="info-section-list">
-                                    <li>Complete bitter taste isolation at high dosing</li>
-                                    <li>Particle size under 250 microns: Below human mouth sensory threshold</li>
-                                    <li>Range of sustained release profiles available</li>
-                                    <li>Avoidance of rapid burst and elimination from plasma</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <footer class="footer" role="contentinfo"></footer>
-    </div>
+						<a href="#" class="stay-in-touch">Let's stay in touch</a>
+					</div>
+					<div class="header-block md-visible">
+						<button class="menu-opener" aria-label="Show navigation">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<nav class="mobile-top-nav">
+				<ul class="mobile-nav">
+					<li><a href="#">Technology</a></li>
+					<li><a href="#">Ingredients</a></li>
+					<li><a href="#">Applications</a></li>
+					<li><a href="#">Resources</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Let's stay in touch</a></li>
+				</ul>
 
-    <div class="modal video-modal" id="video-modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <button class="modal-close" aria-label="Закрыть попап">
+				<ul class="mobile-contacts-list">
+					<li><a href="mailto:info@vitaltech.bio">info@vitaltech.bio</a></li>
+					<li><a href="tel:+972544888888">+ 972 54 4 888 888</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="page-content top-header">
+			<section class="search-section">
+				<div class="container">
+					<h1 class="page-caption wow fadeInUp">
+						<strong>Ingredients</strong>
+					</h1>
+					<div class="form form-filter-section">
+						<form>
+							<div class="form-select-row">
+								<div class="form-box-select wow fadeInUp">
+									<div class="btn-row">
+										<button class="btn filter-btn js-select-all">Select all</button>
+										<button class="btn filter-btn js-select-none">Clear</button>
+									</div>
+									<span class="label-text">Filter by Name</span>
+									<div class="custom-select">
+										<div class="select-option-box" tabindex="0">
+											<div class="select-option">
+												<div class="selected-items">All</div>
+											</div>
+										</div>
+										<div class="box-checkbox">
+											<div class="box-checkbox-scroll">
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="all" type="checkbox" value="">
+													<label for="all">All</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="GuarnaCSR" type="checkbox" value="">
+													<label for="GuarnaCSR">GuarnaCSR</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="CaffeineCSR" type="checkbox" value="">
+													<label for="CaffeineCSR">CaffeineCSR</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="WillowCSR™" type="checkbox" value="">
+													<label for="WillowCSR™">WillowCSR™</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="GingerCSR™" type="checkbox" value="">
+													<label for="GingerCSR™">GingerCSR™</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="GinsengCSR™" type="checkbox" value="">
+													<label for="GinsengCSR™">GinsengCSR™</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="TurmericEBA™" type="checkbox" value="">
+													<label for="TurmericEBA™">TurmericEBA™</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="QuercetinEBA™" type="checkbox" value="">
+													<label for="QuercetinEBA™">QuercetinEBA™</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="ResveratrolEBA™" type="checkbox" value="">
+													<label for="ResveratrolEBA™">ResveratrolEBA™</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="PiperineEBA™" type="checkbox" value="">
+													<label for="PiperineEBA™">PiperineEBA™</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-box-select wow fadeInUp" data-wow-delay="0.2s">
+									<div class="btn-row">
+										<button class="btn filter-btn js-select-all">Select all</button>
+										<button class="btn filter-btn js-select-none">Clear</button>
+									</div>
+									<span class="label-text">Filter by Property</span>
+									<div class="custom-select">
+										<div class="select-option-box" tabindex="0">
+											<div class="select-option">
+												<div class="selected-items">All</div>
+											</div>
+										</div> 
+										<div class="box-checkbox">
+											<div class="box-checkbox-scroll">
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="all" type="checkbox" value="">
+													<label for="all">All</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Nootropic" type="checkbox" value="">
+													<label for="Nootropic">Nootropic</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Adaptogenic" type="checkbox" value="">
+													<label for="Adaptogenic">Adaptogenic</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Focus & clarity" type="checkbox" value="">
+													<label for="Focus & clarity">Focus & clarity</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Alertness" type="checkbox" value="">
+													<label for="Alertness">Alertness</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Mental performance" type="checkbox" value="">
+													<label for="Mental performance">Mental performance</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Cognitive performance" type="checkbox" value="">
+													<label for="Cognitive performance">Cognitive performance</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Motivation" type="checkbox" value="">
+													<label for="Motivation">Motivation</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Mood" type="checkbox" value="">
+													<label for="Mood">Mood</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Stress" type="checkbox" value="">
+													<label for="Stress">Stress</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Muscle power" type="checkbox" value="">
+													<label for="Muscle power">Muscle power</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Muscle soreness" type="checkbox" value="">
+													<label for="Muscle soreness">Muscle soreness</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Muscle cramps" type="checkbox" value="">
+													<label for="Muscle cramps">Muscle cramps</label>
+												</div>
+												<div class="form-filter-button">
+													<input class="custom-checkbox" id="Muscle recovery" type="checkbox" value="">
+													<label for="Muscle recovery">Muscle recovery</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="info-section">
+				<div class="container">
+					<h3 class="page-caption small-page-caption wow fadeInUp">
+						<strong>GingerCSR™</strong>
+					</h3>
+					<div class="info-section-wrrap">
+						<div class="info-section-top">
+							<div class="info-section-left wow fadeInUp">
+								<img src="img/content-images/Ingridients/GingerCSR™.png" alt="" class="info-section-img">
+								<div class="info-section-text">
+									<p>
+										GingerCSR™ micro-encapsulates a standardized extract of the Zingiber Officinale plant. Two extract versions are used: a powdered Ginger extract containing 30% Gingerols and Shogaols; and; a Ginger oil extract containing 50% Gingerols and Shogaols.
+									</p>
+									<p>
+										With significant dosing levels, GingerCSR™ completely isolates the notoriously pungent extracts of high-purity ginger, providing a material competitive advantage to Ginger incorporated food and beverage products
+									</p>
+									<p>
+										The ingredient is optimal for incorporation into bars, shakes, meal replacement products and mix-n-drink beverages
+									</p>
+								</div>
+							</div>
+							<div class="info-section-right wow fadeInUp" data-wow-delay="0.2s">
+								<img src="img/graphs/Caffeine-Conv.svg" alt="">
+								<a href="#" class="btn btn-italic">Click here for more info.</a>
+							</div>
+						</div>
+						<div class="info-section-bottom">
+							<div class="info-section-list-box wow fadeInUp">
+								<div class="list-cation">Keys benefits</div>
+								<ul class="info-section-list">
+									<li>Incidental nausea relief</li>
+									<li>Incidental headache relief</li>
+									<li>Incidental pain relief</li>
+									<li>Incidental fever relief</li>
+									<li>Incidental inflammation relief</li>
+									<li>Muscle cramps relief</li>
+									<li>Gastrointestinal health enhancer</li>
+									<li>Free-radicals scavenging</li>
+								</ul>
+							</div>
+							<div class="info-section-list-box wow fadeInUp" data-wow-delay="0.2s">
+								<div class="list-cation">Keys Properties</div>
+								<ul class="info-section-list">
+									<li>Complete ultra-pungent taste isolation at high dosing</li>
+									<li>Particle size under 250 microns: Below human mouth sensory threshold</li>
+									<li>Range of sustained release profiles </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="info-section">
+				<div class="container"> 
+					<h3 class="small-page-caption wow fadeInUp">
+						<strong>CaffeineCSR™</strong>
+					</h3>
+					<div class="info-section-wrrap">
+						<div class="info-section-top">
+							<div class="info-section-left wow fadeInUp">
+								<img src="img/content-images/Ingridients/CaffeineCSR™.png" alt="" class="info-section-img">
+								<div class="info-section-text">
+									<p>CaffeineCSR™ micro-encapsulates a standardized extract of Caffeine. The sour ce of Caffeine can be natural (as an extract of Coffea Arabica) or synthetic, both with 98% purity.</p>
+									<p>With significant dosing levels, CaffeineCSR™ completely isolates the bitter and unfavorable sensory impact of Caffeine, providing a material competitive advantage to standard Caffeine incorporated food and beverage
+										products
+									</p>
+									<p>The ingredient is optimal for incorporation into bars, shakes, meal replacement products and mix-n-drink beverages beverages
+									</p>
+								</div>
+							</div>
+							<div class="info-section-right wow fadeInUp" data-wow-delay="0.2s">
+								<img src="img/graphs/Caffeine-Conv.svg" alt="">
+								<a href="#" class="btn btn-italic">Click here for more info.</a>
+							</div>
+						</div>
+						<div class="info-section-bottom">
+							<div class="info-section-list-box wow fadeInUp">
+								<div class="list-cation">Keys benefits</div>
+								<ul class="info-section-list">
+									<li>Hours of pleasant, jitteriness-free impact</li>
+									<li>Superb mouthfeel</li>
+									<li>Spike & crash avoidance</li>
+									<li>Alertness enhancer</li>
+									<li>Focus & clarity enhancer</li>
+									<li>Mood enhancer</li>
+									<li>Mental performance enhancer</li>
+									<li>Motivation enhancer</li>
+									<li>Muscle power enhancer </li>
+								</ul>
+							</div>
+							<div class="info-section-list-box wow fadeInUp" data-wow-delay="0.2s">
+								<div class="list-cation">Keys Properties</div>
+								<ul class="info-section-list">
+									<li>Complete bitter taste isolation at high dosing</li>
+									<li>Particle size under 250 microns: Below human mouth sensory threshold</li>
+									<li>Range of sustained release profiles available</li>
+									<li>Avoidance of rapid burst and elimination from plasma</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer wow fadeInUp" role="contentinfo">
+			<div class="footer-inner">
+				<div class="footer-block">
+					<ul class="socials-list">
+						<li>
+							<a href="#" target="_blank" rel="noopener nofollow" aria-label="linkedin">
+								<svg class="link-icon">
+									<use xlink:href="img/icons-sprite.svg#linkedin"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener nofollow" aria-label="twitter">
+								<svg class="link-icon">
+									<use xlink:href="img/icons-sprite.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener nofollow" aria-label="facebook">
+								<svg class="link-icon">
+									<use xlink:href="img/icons-sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" rel="noopener nofollow" aria-label="instagram">
+								<svg class="link-icon">
+									<use xlink:href="img/icons-sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-block footer-nav-block">
+					<ul class="footer-nav">
+						<li><a href="#">Technology</a></li>
+						<li><a href="#">Ingredients</a></li>
+						<li><a href="#">Applications</a></li>
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Company</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="modal video-modal" id="video-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап">
 					<svg class="btn-icon">
 						<use xlink:href="img/icons-sprite.svg#modal-close"></use>
 					</svg>
 				</button>
-                <div class="modal-video">
-                    <div id="modal-video-iframe"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="modal-video">
+					<div id="modal-video-iframe"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="//www.youtube.com/iframe_api"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/scripts.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="//www.youtube.com/iframe_api"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>

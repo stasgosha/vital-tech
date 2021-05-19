@@ -16,4 +16,20 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+
+	@media screen and (max-width: 991px){
+		padding: 20vw 8.3333vw;
+
+		&__line{
+			margin-top: 1vw;
+		}
+
+		&__items{
+			padding: 15vw 0 0;
+			display: grid;
+			justify-content: center;
+			width: 100%;
+			grid-gap: 10vw;
+		}
+	}
 }

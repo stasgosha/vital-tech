@@ -17,6 +17,59 @@ document.addEventListener('DOMContentLoaded', function(){
 		$('body').addClass('no-touch');
 	}
 
+	function getSelectedNames(items){
+		let names = [];
+
+		$(items).each(function(i, el){
+			names.push( $(el).closest('.form-filter-button').find('label').text() );
+		});
+
+		return names;
+	}
+
+	$('.custom-select').each(function(i, el){
+		let dropdown = $(el).find('.box-checkbox');
+
+		$(el).find('.select-option-box').on('click', function(){
+			$(el).toggleClass('opened');
+		});
+
+		$(el).find('input').on('change', function(){
+			let names = getSelectedNames( $(dropdown).find('input:checked') );
+
+			$(el).find('.selected-items').text( names.join(', ') );
+		});
+	});
+
+	$('.form-box-select').each(function(i, el){
+		$(el).find('.js-select-all').click(function(e){
+			e.preventDefault();
+
+			$(el).find('input:not(:checked)').click();
+		});
+
+		$(el).find('.js-select-none').click(function(e){
+			e.preventDefault();
+
+			$(el).find('input:checked').click();
+		});
+	});
+
+	$(document).mouseup(function (e){
+		var div = $(".form-box-select");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0) {
+			$('.custom-select').removeClass('opened');
+		}
+	});
+
+	// Wow
+	new WOW().init();
+
+	$('.wow-random-delay').each(function(i, el){
+		$(el).attr('data-wow-delay', '0.'+(Math.floor(Math.random() * 4 + 2))+'s');
+	});
+
 	// Sliders
 	function equalSlideHeight(slider){
 		$(slider).on('setPosition', function () {

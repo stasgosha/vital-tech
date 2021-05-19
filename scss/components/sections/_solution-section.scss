@@ -5,13 +5,20 @@
 
 	&.tech-page {
 		padding-top: 9.8958vw;
+
 		.section-image{
 			padding-left: 22.1354vw;
+		}
+
+		@media screen and (max-width: 991px){
+			.section-image{
+				padding-left: 0;
+			}
 		}
 	}
 
 	.section-content{
-		padding: 4.6875vw 3.1250vw 3.1250vw;
+		padding: 5.7292vw 3.1250vw 3.1250vw;
 	}
 
 	.section-top{
