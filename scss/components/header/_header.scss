@@ -168,7 +168,7 @@
 
 				.sub-menu{
 					position: absolute;
-					left: -1.5625vw;
+					left: -1.3021vw;
 					top: calc(100% + 1.0417vw);
 				}
 
@@ -219,6 +219,7 @@
 		visibility: hidden;
 		transition: all $t;
 		min-width: 10vw;
+		box-shadow: 0 4px 20px rgba(#000, .25);
 
 		&:before{
 			content: '';

@@ -115,11 +115,14 @@
 				width: fit-content;
 				min-width: 100%;
 				font-size: 1.2500vw;
+				padding-bottom: 2vw;
+
 				.list-cation {
 					font-weight: 700;
 					padding-bottom: 1.0417vw;
 					margin-bottom: 1.0417vw;
 					border-bottom: 1px solid $primary;
+					text-align: left;
 				}
 				.info-section-list {
 					li {

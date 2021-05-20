@@ -74,7 +74,7 @@
 
 		&:hover,
 		&:focus {
-			background: #AD324E;
+			background: darken($primary, 10%);
 			outline: none;
 		}
 

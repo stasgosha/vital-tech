@@ -5,12 +5,24 @@
 			align-items: center;
 			justify-content: center;
 			background-color: #234649;
+
+			> button{
+				width: 1.7708vw;
+				height: 3.3333vw;
+				display: block;
+
+				img{
+					display: block;
+					max-width: 100%;
+					height: auto;
+				}
+			}
 			
 			.slider-nav {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				padding: 2.6042vw 12.6250vw 3.1250vw;
+				padding: 2.6042vw 6.6250vw 3.1250vw;
 				
 				.slider__item {
 					cursor: pointer;
