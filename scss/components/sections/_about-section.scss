@@ -1,34 +1,40 @@
+.page-template-company {
+    .top-header {
+        // padding-top: 8.0688vw;
+        @media screen and (max-width: 991px) {
+            // padding-top: 28.3333vw;
+        }
+    }
+}
+
 .about-section {
-	&:first-child {
-		.about-section-text {
-			margin-top: 9.1146vw;
-		}
-	}
-	.about-section-text {
-		margin-top: 2.3438vw;
-		margin-bottom: 8.8542vw;
-		max-width: 65.6250vw;
-		p{
-			font-size: 1.2500vw;
-			font-style: italic;
-			font-weight: 500;
-			+p{
-				margin-top: 1.5625vw;
-			}
-		}
-	}
-
-	@media screen and (max-width: 991px){
-		.about-section-text{
-			max-width: unset;
-
-			p{
-				font-size: 5.5vw;
-
-				+ p{
-					margin-top: 1em;
-				}
-			}
-		}
-	}
+    &:first-child {
+        .about-section-text {
+            margin-top: 4.1146vw;
+        }
+    }
+    .about-section-text {
+        margin-top: 2.3438vw;
+        margin-bottom: 5.8542vw;
+        max-width: 65.6250vw;
+        p {
+            font-size: 1.2500vw;
+            font-style: italic;
+            font-weight: 500;
+            +p {
+                margin-top: 1.5625vw;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .about-section-text {
+            max-width: unset;
+            p {
+                font-size: 5.5vw;
+                +p {
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
 }

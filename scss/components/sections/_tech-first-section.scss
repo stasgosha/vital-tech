@@ -1,105 +1,185 @@
 .top-header-mini {
-	padding-top: 5.5729vw;
+    padding-top: 5.5729vw;
+    @media screen and (max-width: 991px) {
+        padding-top: 28.3333vw;
+    }
 }
-.tech-first-section {
-	.main-info {
-		width: 70.5729vw;
-		height: 22.7083vw;
-		padding: 3.6458vw 7.5521vw 2.0833vw 13.0208vw;
-		clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
-		background-color: #008791;
 
-		@media screen and (max-width: 991px){
-			width: auto;
-			height: auto;
-			padding: 5vw 10vw;
+.page-template-technology {
+    .header {
+        background: #fff;
+    }
+}
+
+.page-template-technology {
+    .tech-first-section {
+        position: relative;
+		.main-info__header:after{ 
+			width: 61.4792vw; 
 		}
-		
-		&__header {
-			position: relative;
-
-			&:after{
-				content: '';
-				display: block;
-				width: 89.4792vw;
-				height: 3.1771vw;
+		.main-info{ 
+			&::before {
+				content: "";
 				position: absolute;
-				left: -2.3438vw;
-				bottom: 0;
-				background: url(../img/decorations/grundge-line-white.png) no-repeat center center / contain;
+                display: block;
+				right: -31.1667vw;
+				top: -68px;
+				background-image: url(../img/decorations/Tech-R-shape.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 39.1667vw;
+				height: 19.5521vw;
+				z-index: -1;
 			}
 		}
-		&__title {
-			@include h1;
-			color: #fff;
-			padding: 0;
-			
-			strong { 
-				font-weight: normal;
+        .add-info {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+                display: block;
+				left: -8.3333vw;
+				bottom: 5.9063vw;
+				background-image: url(../img/decorations/Tech-L-shape.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 12.7083vw;
+				height: 12.7083vw;
+				z-index: -1;
 			}
-			sup {
-				font-size: 0.49em;
-			}
+
 		}
-		&__sub-title {
-			color: #fff;
-			padding-bottom: 2.3438vw;
-			font-size: 1.5625vw;
+    }
+}
 
-			@media screen and (max-width: 991px){
-				@include p;
-			}
-		}
-		&__paragraph {
-			color: #fff;
-			font-size: 1.8750vw;
+.tech-first-section {
+    position: relative;
+    margin-top: 2.6042vw;
+    @media screen and (max-width: 991px) {
+        margin-top: 0;
+    }
+    .video-bg {
+        position: absolute;
+        width: 79.3750vw;
+        height: 27.0833vw;
+        left: 4.8438vw;
+        top: -5.4688vw;
+        clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+        display: block;
+        object-fit: cover;
+        object-position: center center;
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+    .main-info {
+        position: relative;
+        width: 70.5729vw;
+        height: 22.7083vw;
+        padding: 2.0833vw 7.5521vw 2.0833vw 15.0208vw;
+        // clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+        // background-color: rgba(#008791, .6);
+        z-index: 2;
 
-			@media screen and (max-width: 991px){
-				@include p;
-			}
-		}
-	}
-	.add-info {
-		max-width: 65.1042vw;
-		padding: 3.3854vw 0 3.1250vw 0;
-		margin-left: 8.3333vw;
+        &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(../img/decorations/tech-stripe.png) no-repeat right center;
+            pointer-events: none;
+            z-index: 1;
+            mix-blend-mode: multiply;
+        }
 
-		&__paragraph {
-			font-size: 1.8750vw;
-			font-style: italic;
-		}
-		&__list {
-			margin-left: 27.0833vw;
-			margin-top: 2.0833vw;
+        > *{
+            position: relative;
+            z-index: 2;
+        }
 
-			li {
-				font-size: 1.5625vw;
-				line-height: 2em;
-				&::before {
-					content: '• ';
-					font-size: inherit;
-					display: inline-block;
-				}
-			}
-		}
-
-		@media screen and (max-width: 991px){
-			max-width: unset;
-			padding: 8vw;
-			margin-left: 0;
-
-			&__paragraph{
-				@include p;
-			}
-
-			&__list{
-				margin-left: 0;
-				margin-top: 5vw;
-
-				li{
-					@include p;
-				}
-			}
-		}
-	}
+        @media screen and (max-width: 991px) {
+            width: auto;
+            height: auto;
+            padding: 5vw 10vw;
+        }
+        &__header {
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                width: 89.4792vw;
+                height: 3.1771vw;
+                position: absolute;
+                left: -2.3438vw;
+                bottom: 0;
+                background: url(../img/decorations/grundge-line-white.png) no-repeat center center / contain;
+            }
+        }
+        &__title {
+            @include h1;
+            color: #fff;
+            padding: 0;
+            strong {
+                font-weight: normal;
+            }
+            sup {
+                font-size: 0.49em;
+            }
+        }
+        &__sub-title {
+            color: #fff;
+            padding-bottom: 2.3438vw;
+            font-size: 1.5625vw;
+            @media screen and (max-width: 991px) {
+                @include p;
+            }
+        }
+        &__paragraph {
+            color: #fff;
+            font-size: 1.8750vw;
+            @media screen and (max-width: 991px) {
+                @include p;
+            }
+        }
+    }
+    .add-info {
+        max-width: 65.1042vw;
+        padding: 3.3854vw 0 3.1250vw 0;
+        margin-left: 8.3333vw;
+        &__paragraph {
+            font-size: 1.8750vw;
+            font-style: italic;
+        }
+        &__list {
+            margin-left: 6.6875vw;
+            margin-top: 2.0833vw;
+            li {
+                font-size: 1.5625vw;
+                line-height: 2em;
+                &::before {
+                    content: '• ';
+                    font-size: inherit;
+                    display: inline-block;
+                }
+            }
+        }
+        @media screen and (max-width: 991px) {
+            max-width: unset;
+            padding: 8vw;
+            margin-left: 0;
+            &__paragraph {
+                @include p;
+            }
+            &__list {
+                margin-left: 0;
+                margin-top: 5vw;
+                li {
+                    @include p;
+                }
+            }
+        }
+    }
 }

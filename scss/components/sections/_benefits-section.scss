@@ -13,6 +13,8 @@
 		@media screen and (max-width: 991px){
 			padding: 27.7778vw 5.555vw;
 			height: auto;
+
+			background: url(../img/backgrounds/benefits-gradient.jpg) repeat-y center top / 100% auto;
 		}
 	}
 }
@@ -37,6 +39,7 @@
 	.card-image{
 		width: 10.0000vw;
 		height: 10.0000vw;
+		margin-bottom: 2.6042vw;
 
 		img{
 			display: block;
@@ -62,6 +65,13 @@
 			width: 47.2222vw;
 			height: 47.2222vw;
 			margin-bottom: 8.3333vw;
+
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				object-position: center center;
+			}
 		}
 
 		.card-caption{

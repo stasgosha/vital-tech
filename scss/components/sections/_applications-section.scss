@@ -10,23 +10,33 @@
 				width: 1.7708vw;
 				height: 3.3333vw;
 				display: block;
+				position: relative; 
 
 				img{
-					display: block;
+					display: block; 
 					max-width: 100%;
 					height: auto;
 				}
+				@media screen and (min-width: 1400px){ 
+					&.slick-prev-custom{
+						left: -8vw;
+					}
+					&.slick-next-custom{
+						right: -8vw; 
+					}
+				}
 			}
-			
+			 
 			.slider-nav {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				padding: 2.6042vw 6.6250vw 3.1250vw;
+				// padding: 2.6042vw 6.6250vw 3.1250vw;
+				padding:  1.6042vw 6.625vw 1.6042vw;
 				
 				.slider__item {
-					cursor: pointer;
-					margin-right: 5.9896vw;
+					cursor: pointer; 
+					margin-right: 4.9896vw;
 					border: 0.7813vw solid transparent;
 					&:last-child {
 						margin-right: 0;
@@ -70,7 +80,7 @@
 					z-index: -1;
 					opacity: 0.66;
 					clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-					background-color: #234649;
+					background-color: #4c9da7;
 				}
 				h3 {
 					@include h3;
@@ -112,6 +122,109 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+
+
+
+.mobile-applications-slider-scope{
+	.top-slider{
+		padding: 12.5000vw 6.9444vw;
+		background: #234649;
+
+		.slide-image{
+			width: 47.2222vw;
+			height: 47.2222vw;
+			padding: 4.1667vw;
+			background: #007280;
+			border-radius: 50%;
+			margin-left: auto;
+			margin-right: auto;
+
+			img{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				object-fit: contain;
+				object-position: center center;
+			}
+		}
+
+		.slick-arrow{
+			width: 5.2778vw;
+			height: 8.8889vw;
+			display: block;
+
+			&:before{
+				display: none;
+			}
+
+			&.slick-prev{
+				left: 6.9444vw;
+				background: url(../img/applications-slider/arrrow-left.png) no-repeat center center / contain;
+			}
+
+			&.slick-next{
+				right: 6.9444vw;
+				background: url(../img/applications-slider/arrrow-right.png) no-repeat center center / contain;
+			}
+		}
+	}
+
+	.bottom-slider{
+		color: #fff;
+	}
+}
+
+.mobile-application-block{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	.block-image{
+		img{
+			width: 100%;
+			height: 118.0556vw;
+			object-fit: cover;
+			object-position: center center;
+		}
+	}
+
+	.block-content{
+		flex: auto;
+		padding: 11.1111vw 5.555vw;
+		background: url(../img/backgrounds/applications-slider-mobile-bg.jpg) no-repeat center center / cover;
+	}
+
+	.block-caption{
+		font-size: 11.1111vw;
+		line-height: 1.25;
+		text-transform: uppercase;
+		font-weight: 500;
+		margin-bottom: 2.7778vw;
+	}
+
+	.block-text{
+		font-size: 8.3333vw;
+		line-height: 1.1;
+		padding: 4.1667vw 0;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		margin-bottom: 8.3333vw;
+	}
+
+	.actives-list{
+		.list-title{
+			font-size: 8.3333vw;
+			line-height: 1.25;
+			font-weight: bold;
+			margin-bottom: 6.9444vw;
+		}
+
+		ul{
+			@include default-ul;
 		}
 	}
 }

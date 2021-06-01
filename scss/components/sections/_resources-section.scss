@@ -2,7 +2,7 @@
 	background: #3bc1c3;
 	border-top: 3px solid #2d9091;
 
-	--header-number-color: #35b0b2;
+	--header-number-color: transparent;  //#35b0b2
 	--header-border-color: #34aaab;
 
 	.section-header-content{
@@ -23,6 +23,14 @@
 
 	@media screen and (max-width: 991px){
 		padding-bottom: 16.6667vw;
+
+		.default-section-header .section-header-number{
+			min-height: 18vw;
+
+			.number{
+				display: none;
+			}
+		}
 	}
 }
 

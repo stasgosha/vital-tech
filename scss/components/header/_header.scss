@@ -18,7 +18,7 @@
 		display: block;
 		width: calc(100% - 1.5625vw * 2);
 		height: 1px;
-		background: #fff;
+		background: #000000;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -192,21 +192,21 @@
 				&:hover,
 				&:focus{
 					outline: none;
-					color: #0c7476;
+					color: $hover-color;
 				}
 			}
-		}
 
-		&.current-menu-item,
-		&.current-menu-parent{
-			> a{
-				color: #0c7476;
+			&.current-menu-item,
+			&.current-menu-parent{
+				> a{
+					color: $hover-color;
+				}
 			}
-		}
-		
-		&.current-menu-item{
-			> a{
-				cursor: default;
+			
+			&.current-menu-item{
+				> a{
+					cursor: default;
+				}
 			}
 		}
 	}
@@ -250,14 +250,14 @@
 				&:hover,
 				&:focus{
 					outline: none;
-					color: #0c7476;
+					color: $hover-color;
 				}
 			}
 
 			&.current-menu-item,
 			&.current-menu-parent{
 				a{
-					color: #0c7476;
+					color: $hover-color;
 				}
 			}
 			

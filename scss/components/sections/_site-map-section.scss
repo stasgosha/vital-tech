@@ -2,7 +2,7 @@
 	background: #484747;
 	color: #fff;
 
-	--header-number-color: #404141;
+	--header-number-color: transparent; //#404141
 	--header-border-color: #34aaab;
 
 	.section-header-content{
@@ -14,6 +14,14 @@
 
 		.default-section-header{
 			padding-bottom: 0;
+		}
+
+		.default-section-header .section-header-number{
+			min-height: 18vw;
+
+			.number{
+				display: none;
+			}
 		}
 	}
 }

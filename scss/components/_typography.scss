@@ -17,7 +17,7 @@ body{
 @mixin h1{
 	font-size: 4.4271vw;
 	line-height: 1.2;
-	padding-bottom: 3.1250vw;
+	padding-bottom: 3.1250vw; 
 	text-transform: uppercase;
 	font-style: italic;
 	font-weight: 500;
@@ -25,6 +25,9 @@ body{
 	@media screen and (max-width: 991px){
 		font-size: 13.3333vw;
 	}
+}
+@mixin new-h1{
+	font-size: 3.6458vw; 
 }
 
 @mixin h2{
@@ -48,6 +51,7 @@ body{
 		font-size: 7.7778vw;
 	}
 }
+
 
 @mixin tech-title{
 	@include h3;
@@ -110,6 +114,10 @@ body{
 
 	@media screen and (max-width: 991px){
 		font-size: 5.5556vw;
+
+		li{
+			margin-bottom: 0.1em;
+		}
 	}
 }
 
@@ -136,17 +144,18 @@ body{
 			margin-top: 3em;
 		}
 	}
-}
+} 
 
 .page-caption{
 	@include h1;
+	@include new-h1; 
 	position: relative;
 
 	&:after{
 		content: '';
 		display: block;
 		width: 89.4792vw;
-		height: 3.1771vw;
+		height: 1.4063vw;
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -155,6 +164,12 @@ body{
 
 	strong{
 		font-weight: inherit;
+	}
+	&.no-after{
+		padding-bottom: 0;
+		&:after{
+			content: initial;
+		} 
 	}
 }
 
@@ -173,8 +188,8 @@ body{
 	&:after{
 		content: '';
 		display: block;
-		width: 100%;
-		height: 3.1771vw;
+		width: 89.4792vw;
+		height: 1.4063vw;
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -205,6 +220,10 @@ body{
 		background: url(../img/decorations/grundge-line-small.png) no-repeat center center / contain;
 	}
 
+	@media screen and (min-width: 768px){
+		padding-right: 5.5208vw;
+		overflow: hidden; 
+	}
 	@media screen and (max-width: 991px){
 		font-size: 8.333vw;
 		padding-bottom: 4vw;

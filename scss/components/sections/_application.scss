@@ -1,16 +1,17 @@
-.application {
+.application,
+.page-template-applications {
 	.search-section {
 		&::before {
 			content: "";
 			position: absolute;
 			right: 0;
-			top: 11.9271vw;
-			background-image: url(../img/decorations/Applications-decor.png);
+			top: 10.271vw;
+			background-image: url(../img/decorations/Applications-decor-new.png);
 			background-repeat: no-repeat;
 			background-size: cover;
-			width: 27.0833vw;
+			width: 29.0833vw;
 			height: 39.7917vw;
-			z-index: 1;
+			z-index: -1;
 		}
 	}
 

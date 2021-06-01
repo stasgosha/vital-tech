@@ -47,13 +47,14 @@
 	&.form-filter-section {
 		margin-top: 2.0313vw;
 		margin-bottom: 4.1667vw;
-		padding-bottom: 3.1250vw;
+		// padding-bottom: 3.1250vw;
+		padding-bottom: 21.125vw;
 		position: relative;
 
 		&::after,&::before {
 			content: "";
 			position: absolute;
-			width: calc(100% + 3.6458vw);
+			width: calc(100% + 7.6458vw);
 			height: 1px;
 			background: #8e9193; 
 			bottom: 0;

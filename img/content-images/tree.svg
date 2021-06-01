@@ -1,0 +1,62 @@
+<svg width="872" height="1078" viewBox="0 0 872 1078" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<path class="path-0" d="M471.99 556H464.002V520.557C464.002 462.915 418.638 416.021 362.869 416.021H204V408H362.879C423.051 408 472 458.493 472 520.557V556H471.99Z" fill="#00D0E0"/>
+	<path class="path-1" d="M437.99 937H430.002V721.557C430.002 663.915 384.638 617.021 328.869 617.021H210V609H328.879C389.051 609 438 659.493 438 721.557V937H437.99Z" fill="#00D0E0"/>
+	<path class="path-2" d="M357.53 416.75C323.51 387.32 306 347.66 306 302.71C307 252.4 335.4 196 389.71 176V184C339.81 204 315 256.81 314 302.71C314 345.33 330.5 382.78 362.76 410.7L357.53 416.75Z" fill="#00D0E0"/>
+	<path class="path-3" d="M467.15 941.79L464 934.44C544.53 898.5 578.8 846.5 577.39 761.15L585.31 761C587.24 849.93 551.01 904.43 467.15 941.79Z" fill="#00D0E0"/>
+	<path class="path-4" d="M472 602.54H464C464 569.16 491.87 542 526.13 542H683.36V550H526.14C496.29 550.01 472 573.57 472 602.54Z" fill="#00D0E0"/>
+	<path class="path-5" d="M535.269 607.587C509.739 548.007 538.769 478.187 599.989 451.957L603.139 459.307C545.979 483.797 518.829 548.907 542.619 604.437L535.269 607.587Z" fill="#00D0E0"/>
+	<path class="path-6" d="M708.376 404L596.373 454.129L599.276 460.499L711.278 410.37L708.376 404Z" fill="#00D0E0"/>
+	<path class="path-7" d="M437.88 883.68C395.79 887.11 352.5 872.92 320 841" stroke="#00D0E0" stroke-width="8" stroke-miterlimit="10"/>
+	<path class="path-8" d="M472 402H464V1077.54H472V402Z" fill="#00D0E0"/>
+
+	<circle class="decor-0" cx="208" cy="49" r="13" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="decor-1" cx="631" cy="255" r="28" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="decor-2" cx="644.5" cy="798.5" r="12.5" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="decor-3" cx="286.5" cy="523.5" r="7.5" stroke="#00D0E0" stroke-width="8"/>
+
+	<circle class="circle-0" cx="103.5" cy="402.5" r="99.5" fill="url(#pattern0)" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="circle-1" cx="127" cy="613" r="82" fill="url(#pattern1)" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="circle-2" cx="466" cy="319" r="85" fill="url(#pattern2)" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="circle-3" cx="451.5" cy="103.5" r="99.5" fill="url(#pattern3)" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="circle-4" cx="322" cy="765" r="82" fill="url(#pattern4)" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="circle-5" cx="574" cy="678" r="86" fill="url(#pattern5)" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="circle-6" cx="765" cy="567" r="86" fill="url(#pattern6)" stroke="#00D0E0" stroke-width="8"/>
+	<circle class="circle-7" cx="780" cy="360" r="88" fill="url(#pattern7)" stroke="#00D0E0" stroke-width="8"/>
+
+	<defs>
+		<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+			<use xlink:href="#image0"/>
+		</pattern>
+		<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+			<use xlink:href="#image1"/>
+		</pattern>
+		<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+			<use xlink:href="#image2"/>
+		</pattern>
+		<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+			<use xlink:href="#image3"/>
+		</pattern>
+		<pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+			<use xlink:href="#image4"/>
+		</pattern>
+		<pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
+			<use xlink:href="#image5"/>
+		</pattern>
+		<pattern id="pattern6" patternContentUnits="objectBoundingBox" width="1" height="1">
+			<use xlink:href="#image6"/>
+		</pattern>
+		<pattern id="pattern7" patternContentUnits="objectBoundingBox" width="1" height="1">
+			<use xlink:href="#image7"/>
+		</pattern>
+
+		<image id="image0" width="300" height="300" xlink:href=""/>
+		<image id="image1" width="300" height="300" xlink:href=""/>
+		<image id="image2" width="300" height="300" xlink:href=""/>
+		<image id="image3" width="300" height="300" xlink:href=""/>
+		<image id="image4" width="300" height="300" xlink:href=""/>
+		<image id="image5" width="300" height="300" xlink:href=""/>
+		<image id="image6" width="300" height="300" xlink:href=""/>
+		<image id="image7" width="300" height="300" xlink:href=""/>
+	</defs>
+</svg>

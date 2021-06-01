@@ -1,4 +1,4 @@
-.сompany {
+.page-template-company {
     .page-content {
         position: relative;
         &::before,
@@ -9,11 +9,11 @@
             background-size: cover;
         }
         &::before {
-            left: 0;
+            right: 0;
             top: 8.9271vw;
-            background-image: url(../img/decorations/company.png);
-            width: 26.3542vw;
-            height: 39.7396vw; 
+            background-image: url(../img/decorations/company-new.png);
+            width: 29.3542vw;
+            height: 40.7396vw;
         }
         &::after { 
             right: 0;
