@@ -1,4 +1,7 @@
 .info-section {
+	// position: relative;
+	// z-index: 20;
+
 	+.info-section {
 		.info-section-wrrap { 
 			// margin-bottom: 2.8646vw;
@@ -73,7 +76,9 @@
 					padding-left: 2.0833vw;
 					max-width: 27.8646vw;
 					li{
-
+						&:before{
+							content: '• ';
+						}
 					}
 				}
 			}

@@ -1,6 +1,5 @@
 .application,
 .page-template-applications {
-	.search-section {
 		&::before {
 			content: "";
 			position: absolute;
@@ -13,6 +12,7 @@
 			height: 39.7917vw;
 			z-index: -1;
 		}
+	.search-section {
 	}
 
 	.info-section{ 

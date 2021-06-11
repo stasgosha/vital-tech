@@ -62,9 +62,16 @@
 }
 
 .grafic{
+	width: 48.6458vw;
+	margin-left: auto;
+
 	img{
 		display: block;
 		max-width: 100%;
 		height: auto;
+	}
+
+	@media screen and (max-width: 991px){
+		width: 100%;
 	}
 }

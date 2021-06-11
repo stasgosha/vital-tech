@@ -4,17 +4,17 @@
 	--header-number-color: #d0d5d6;
 
 	&.tech-page {
-		padding-top: 9.8958vw;
+		// padding-top: 9.8958vw;
 
-		.section-image{
-			padding-left: 22.1354vw;
-		}
+		// .section-image{
+		// 	padding-left: 22.1354vw;
+		// }
 
-		@media screen and (max-width: 991px){
-			.section-image{
-				padding-left: 0;
-			}
-		}
+		// @media screen and (max-width: 991px){
+		// 	.section-image{
+		// 		padding-left: 0;
+		// 	}
+		// }
 	}
 
 	.section-content{
@@ -36,7 +36,7 @@
 		img{
 			flex: none;
 			// width: 35.8333vw;
-			width: 530px;
+			width: 27.6042vw;
 			display: block;
 			height: auto;
 			margin-right: 5.6250vw; 

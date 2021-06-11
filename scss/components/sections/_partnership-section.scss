@@ -14,13 +14,13 @@
 	}
 
 	.section-inner{
-		padding: 6.7708vw 3.6458vw 7.8125vw;
+		padding: 4.7708vw 3.6458vw;
 	}
 
 	.section-grid{
 		display: grid;
-		grid-template-columns: repeat(3, 23.4375vw);
-		grid-gap: 6.2500vw 2.0833vw;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 6.2500vw 4vw;
 		justify-content: space-between;
 	}
 
