@@ -162,6 +162,26 @@ body{
 		background: url(../img/decorations/grundge-line.png) no-repeat center center / contain;
 	}
 
+	small{
+		font-size: 60px;
+		position: relative;
+		padding-left: 37px;
+		text-transform: capitalize;
+		font-weight: 600;
+
+		&::before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 12px;
+			height: 57px;
+			background-image: url('../img/icons/line.png');
+			background-repeat: no-repeat;
+		}
+	}
+
 	strong{
 		font-weight: inherit;
 	}
@@ -232,6 +252,62 @@ body{
 		&:after{
 			width: 100%;
 			height: 4vw;
+		}
+	}
+}
+
+
+
+
+.single-solution-title{
+	h3{
+		font-weight: 500;
+		font-style: italic;
+		font-size: 2.5vw;
+	}
+}
+
+.single-solution-text{
+	p{
+		font-weight: 500;
+		font-style: italic;
+		font-size: 1.25vw;
+		line-height: 1.5;
+	}
+}
+
+.single-solution-list{
+	ul{
+		li{
+			font-weight: 500;
+            font-style: italic;
+            line-height: 1.25;
+            font-size: 1.25vw;
+            padding-left: 1.35vw;
+            position: relative;
+            // display: flex;
+            // align-items: center;
+
+			&::before{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 5px;
+				height: 5px;
+				background-color: #00b5c7;
+				border-radius: 100%;
+			}
+			&:not(:first-child){
+				margin-top: 2.08vw;
+			}
+			strong{
+				display: inline;
+				font-weight: 500;
+				font-style: italic;
+				color: #0aa0af;
+			}
 		}
 	}
 }

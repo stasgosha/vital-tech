@@ -1,0 +1,46 @@
+.application-example {
+    padding-top: 8.95vw;
+    padding-bottom: 10.52vw;
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__img {
+        margin-right: 2.18vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 16.40vw;
+            height: 16.40vw;
+            border: 1px solid #a1a2a2;
+            border-radius: 100%;
+        }
+
+
+        img{
+            width: 15.72vw;
+            height: 15.72vw;
+            border-radius: 100%;
+        }
+    }
+    &__content {
+        max-width: 70vw;
+        &-title {
+            padding-bottom: 1.04vw;
+            border-bottom: 3px dotted #b3b2b2;
+            margin-bottom: 2.60vw;
+        }
+    
+        &-text {
+            margin-bottom: 2.08vw;
+        }
+    }
+
+
+}

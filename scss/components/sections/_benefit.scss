@@ -1,0 +1,56 @@
+.benefit {
+    padding-top: 5.20vw;
+    padding-bottom: 2.34vw;
+    background-color: #eaeaea;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        margin-right: 5.98vw;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 14.21vw);
+        grid-column-gap: 5.93vw;
+        justify-content: center;
+        .benefit__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: auto;
+        }
+        .benefit__card-img {
+            margin-bottom: 2.34vw;
+            img{
+                display: block;
+            }
+        }
+        .benefit__card-title {
+            margin-bottom: 5.20;
+            h4{
+                font-weight: 500;
+                font-size: 1.56vw;
+                font-size: 1.3;
+            }
+        }
+        .benefit__card-text {
+            margin-top: auto;
+            p{
+                font-size: 1.04vw;
+                line-height: 1.6;
+
+
+                strong{
+                    font-weight: 600;
+                    sup{
+                        font-size: 0.625vw;
+                    }
+                }
+            }
+        }
+    }
+
+}
