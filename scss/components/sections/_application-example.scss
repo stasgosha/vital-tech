@@ -44,3 +44,22 @@
 
 
 }
+@media(max-width:991px){
+    .application-example__content{
+        max-width: 100%;
+    }
+    .application-example__wrapper{
+        flex-direction: column;
+    }
+    .application-example__img{
+       margin: 0 auto 30px;
+       img{
+           width: 89vw;
+           height: 89vw;
+       }
+    }
+    .application-example__img:before{
+        width: 91vw;
+        height: 91vw;
+    }
+}

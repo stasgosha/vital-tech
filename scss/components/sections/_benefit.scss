@@ -25,11 +25,13 @@
         .benefit__card-img {
             margin-bottom: 2.34vw;
             img{
+                width: 7.60vw;
+                height: 7.44vw;
                 display: block;
             }
         }
         .benefit__card-title {
-            margin-bottom: 5.20;
+            margin-bottom: 5.20vw;
             h4{
                 font-weight: 500;
                 font-size: 1.56vw;
@@ -53,4 +55,52 @@
         }
     }
 
+}
+
+
+@media(max-width:991px){
+    .benefit__cards{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3.9063vw 3.9063vw;
+    }
+    .benefit__cards .benefit__card-img img{
+        width:12vw;
+        height:12vw;
+    }
+    .benefit__cards .benefit__card-title h4{
+        font-size: 2.56vw;
+    }
+    .benefit__cards .benefit__card-text{
+        margin-top: 0;
+    }
+    .benefit__cards .benefit__card-text p{
+        font-size: 2vw;
+    }
+}
+
+
+@media(max-width:550px){
+    .benefit__wrapper{
+        flex-direction: column;
+    }
+    .benefit__title.single-solution-title{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .benefit__cards{
+        grid-template-columns: 1fr;
+    }
+    .benefit__cards .benefit__card-img img{
+        width:15vw;
+        height:15vw;
+    }
+    .benefit__cards .benefit__card-title h4{
+        font-size: 6.56vw;
+    }
+    .benefit__cards .benefit__card-text{
+        margin-top: 0;
+    }
+    .benefit__cards .benefit__card-text p{
+        font-size: 4.5vw;
+    }
 }
