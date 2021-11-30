@@ -26,6 +26,36 @@
 		z-index: 2;
 	}
 
+	.watch-a-video {
+		display: flex;
+		justify-content: center;
+		margin-top: 1.5625vw;
+		z-index: 5;
+
+		a {
+			color: $primary;
+			text-decoration: none;
+			color: #fff;
+			position: relative;
+			display: flex;
+			align-items: center;
+			padding: 10px 35px;
+			background-color: $primary;
+			border-radius: 35px;
+
+			&::after {
+				display: flex;
+				content: '';
+				margin-left: 15px;
+				width: 0; 
+				height: 0; 
+				border-top: 10px solid transparent;
+				border-left: 10px solid #fff;
+				border-bottom: 10px solid transparent;
+			}
+		}
+	}
+
 	@media screen and (min-width: 992px){
 		// height: 65.7813vw;
 		padding-bottom: 5vw;

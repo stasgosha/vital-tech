@@ -162,6 +162,34 @@ body{
 		background: url(../img/decorations/grundge-line.png) no-repeat center center / contain;
 	}
 
+	small{
+		font-size: 3.125vw;
+		position: relative;
+		padding-left: 1.92vw;
+		text-transform: capitalize;
+		font-weight: 600;
+		@media screen and (max-width: 991px){
+			padding-left: 0;
+			font-size: 9.333vw;
+		}
+
+		&::before{
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 12px;
+			height: 57px;
+			background-image: url('../img/icons/line.png');
+			background-repeat: no-repeat;
+
+			@media screen and (max-width: 991px){
+				display: none;
+			}
+		}
+	}
+
 	strong{
 		font-weight: inherit;
 	}
@@ -232,6 +260,78 @@ body{
 		&:after{
 			width: 100%;
 			height: 4vw;
+		}
+	}
+}
+
+
+
+
+.single-solution-title{
+	h3{
+		font-weight: 500;
+		font-style: italic;
+		font-size: 2.5vw;
+		@media screen and (max-width: 991px){
+			font-size: 6.7778vw;
+		}
+	}
+}
+
+.single-solution-text{
+	p{
+		font-weight: 500;
+		font-style: italic;
+		font-size: 1.25vw;
+		line-height: 1.5;
+		@media screen and (max-width: 991px){
+			font-size: 5.5556vw;
+		}
+	}
+}
+
+.single-solution-list{
+	ul{
+		li{
+			font-weight: 500;
+            font-style: italic;
+            line-height: 1.25;
+            font-size: 1.25vw;
+            padding-left: 1.35vw;
+            position: relative;
+            // display: flex;
+            // align-items: center;
+			@media screen and (max-width: 991px){
+				padding-left: 5.35vw;
+			}
+
+			&::before{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 5px;
+				height: 5px;
+				background-color: #00b5c7;
+				border-radius: 100%;
+				@media screen and (max-width: 991px){
+					width: 2vw;
+					height: 2vw;
+				}
+			}
+			&:not(:first-child){
+				margin-top: 2.08vw;
+			}
+			strong{
+				display: inline;
+				font-weight: 500;
+				font-style: italic;
+				color: #0aa0af;
+			}
+			@media screen and (max-width: 991px){
+				font-size: 5.5556vw;
+			}
 		}
 	}
 }
